@@ -1,0 +1,156 @@
+/Users/lhp/Library/Caches/pypoetry/virtualenvs/haok-Gc5Digdj-py3.11/bin/python /Users/lhp/Desktop/haok/haok/exp1/cot_with_haok.py
+Pinged your deployment. You successfully connected to MongoDB!
+检测到已经完成0项，即将跳过
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+WARNING:langchain_community.utilities.python:Python REPL can execute arbitrary code. Use with caution.
+{'sequence': '{ [ [ [ { [ ] } ] ]'}
+Success: True, Question: { [ [ [ { [ ] } ] ] Output: ]} Answer: ] }
+total_tokens_k: 0.214k, prompt_tokens_k: 0.2k, completion_tokens_k: 0.014k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< [ ( ) [ ( ) ] ] ( [ < ( ( ( < < { [ ] } < [ { } ] > > > [ < [ < [ < < [ { ( { [ { < ( ) > } ] [ ] } ( ) ) } ] ( [ ( ( < ( ) > ) ) ] ) < > > > ] > ] > ] { } ) ) ) > ] )'}
+Success: True, Question: < [ ( ) [ ( ) ] ] ( [ < ( ( ( < < { [ ] } < [ { } ] > > > [ < [ < [ < < [ { ( { [ { < ( ) > } ] [ ] } ( ) ) } ] ( [ ( ( < ( ) > ) ) ] ) < > > > ] > ] > ] { } ) ) ) > ] ) Output: > Answer: >
+total_tokens_k: 0.364k, prompt_tokens_k: 0.275k, completion_tokens_k: 0.089k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< { [ ( )'}
+Success: True, Question: < { [ ( ) Output: ]}> Answer: ] } >
+total_tokens_k: 0.204k, prompt_tokens_k: 0.195k, completion_tokens_k: 0.009k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ } ['}
+Success: True, Question: { } [ Output: ] Answer: ]
+total_tokens_k: 0.2k, prompt_tokens_k: 0.193k, completion_tokens_k: 0.007k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) }'}
+Success: True, Question: < ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) } Output: )> Answer: ) >
+total_tokens_k: 0.302k, prompt_tokens_k: 0.244k, completion_tokens_k: 0.058k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< ( < > < > {'}
+Success: True, Question: < ( < > < > { Output: })> Answer: } ) >
+total_tokens_k: 0.208k, prompt_tokens_k: 0.197k, completion_tokens_k: 0.011k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ]'}
+Success: True, Question: ( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ] Output: ) Answer: )
+total_tokens_k: 0.256k, prompt_tokens_k: 0.221k, completion_tokens_k: 0.035k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '[ < > ] [ { < { } > { [ ( [ ( ) ] ) ]'}
+Success: True, Question: [ < > ] [ { < { } > { [ ( [ ( ) ] ) ] Output: }}] Answer: } } ]
+total_tokens_k: 0.232k, prompt_tokens_k: 0.209k, completion_tokens_k: 0.023k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( ['}
+Success: True, Question: { < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( [ Output: ])} Answer: ] ) }
+total_tokens_k: 0.304k, prompt_tokens_k: 0.245k, completion_tokens_k: 0.059k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< [ < > < { [ [ ( [ [ { ( { [ ( ) ] } { ( [ ( ( ( [ [ ( { } ) ] ] ) ) ) ] ) } ) } ] ] ) ] ] }'}
+Success: True, Question: < [ < > < { [ [ ( [ [ { ( { [ ( ) ] } { ( [ ( ( ( [ [ ( { } ) ] ] ) ) ) ] ) } ) } ] ] ) ] ] } Output: >]> Answer: > ] >
+total_tokens_k: 0.288k, prompt_tokens_k: 0.237k, completion_tokens_k: 0.051k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ ( ( [ [ [ ( { } < < [ { [ { { } } ] } ] > > ) ] { } ( { ( < < ( < < > > ) > > ) } [ ( ( ( [ ( < > ) ] ) ) { [ [ ( ) ] ] } { } ) ] < { } > ) ] { < { [ [ ] ] } > } ] ) ) [ { [ ] }'}
+Success: True, Question: { ( ( [ [ [ ( { } < < [ { [ { { } } ] } ] > > ) ] { } ( { ( < < ( < < > > ) > > ) } [ ( ( ( [ ( < > ) ] ) ) { [ [ ( ) ] ] } { } ) ] < { } > ) ] { < { [ [ ] ] } > } ] ) ) [ { [ ] } Output: ]} Answer: ] }
+total_tokens_k: 0.374k, prompt_tokens_k: 0.28k, completion_tokens_k: 0.094k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ [ { < > } ]'}
+Success: True, Question: { [ { < > } ] Output: } Answer: }
+total_tokens_k: 0.208k, prompt_tokens_k: 0.197k, completion_tokens_k: 0.011k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '[ { < { { } } > } { { [ < < { } > { < < < { { < > } } > > > { [ < ( < { } ( ( ) ) > ) > ] } < [ [ { ( [ { ( { } ) } ] ) } ] ] > } > ] } } [ { { } [ [ { } ] ] } ]'}
+Success: True, Question: [ { < { { } } > } { { [ < < { } > { < < < { { < > } } > > > { [ < ( < { } ( ( ) ) > ) > ] } < [ [ { ( [ { ( { } ) } ] ) } ] ] > } > ] } } [ { { } [ [ { } ] ] } ] Output: ] Answer: ]
+total_tokens_k: 0.356k, prompt_tokens_k: 0.271k, completion_tokens_k: 0.085k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ < > < ['}
+Success: True, Question: { < > < [ Output: ]>} Answer: ] > }
+total_tokens_k: 0.204k, prompt_tokens_k: 0.195k, completion_tokens_k: 0.009k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< { ('}
+Success: True, Question: < { ( Output: )}> Answer: ) } >
+total_tokens_k: 0.2k, prompt_tokens_k: 0.193k, completion_tokens_k: 0.007k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '[ { }'}
+Success: True, Question: [ { } Output: ] Answer: ]
+total_tokens_k: 0.2k, prompt_tokens_k: 0.193k, completion_tokens_k: 0.007k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< [ [ [ { } ] ] ] > ( ( [ ]'}
+Success: True, Question: < [ [ [ { } ] ] ] > ( ( [ ] Output: )) Answer: ) )
+total_tokens_k: 0.222k, prompt_tokens_k: 0.204k, completion_tokens_k: 0.018k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ { ( ) }'}
+Success: True, Question: { { ( ) } Output: } Answer: }
+total_tokens_k: 0.204k, prompt_tokens_k: 0.195k, completion_tokens_k: 0.009k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( ) ( ( < [ ] ( < > ) > )'}
+Success: True, Question: ( ) ( ( < [ ] ( < > ) > ) Output: ) Answer: )
+total_tokens_k: 0.22k, prompt_tokens_k: 0.203k, completion_tokens_k: 0.017k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( [ ( < ( [ ] ) > ) ]'}
+Success: True, Question: ( [ ( < ( [ ] ) > ) ] Output: ) Answer: )
+total_tokens_k: 0.216k, prompt_tokens_k: 0.201k, completion_tokens_k: 0.015k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< { } [ [ ( ( < { < { [ ] } > } > ) )'}
+Success: True, Question: < { } [ [ ( ( < { < { [ ] } > } > ) ) Output: ]]> Answer: ] ] >
+total_tokens_k: 0.232k, prompt_tokens_k: 0.209k, completion_tokens_k: 0.023k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( [ ( { < { ( { { < > } } ) } > }'}
+Success: True, Question: ( [ ( { < { ( { { < > } } ) } > } Output: )]) Answer: ) ] )
+total_tokens_k: 0.228k, prompt_tokens_k: 0.207k, completion_tokens_k: 0.021k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ ( [ { ( < [ { ( ) { } } ] > ) < > } ]'}
+Success: True, Question: { ( [ { ( < [ { ( ) { } } ] > ) < > } ] Output: )} Answer: ) }
+total_tokens_k: 0.234k, prompt_tokens_k: 0.21k, completion_tokens_k: 0.024k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '[ ] { < { { ( { [ ( [ { < < ( ) [ { } ] ( [ ( ) [ < ( { } ) > [ { } ] ] ( ) ( [ [ ( ( [ < > { { ( ) } } ] ) ( ) ) ] ] ) [ ] ] ) > > } ] ) ] } ) } }'}
+Success: True, Question: [ ] { < { { ( { [ ( [ { < < ( ) [ { } ] ( [ ( ) [ < ( { } ) > [ { } ] ] ( ) ( [ [ ( ( [ < > { { ( ) } } ] ) ( ) ) ] ] ) [ ] ] ) > > } ] ) ] } ) } } Output: >} Answer: > }
+total_tokens_k: 0.342k, prompt_tokens_k: 0.264k, completion_tokens_k: 0.078k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( { } < > { < { ( < > ) } >'}
+Success: True, Question: ( { } < > { < { ( < > ) } > Output: }) Answer: } )
+total_tokens_k: 0.222k, prompt_tokens_k: 0.204k, completion_tokens_k: 0.018k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ]'}
+Success: True, Question: ( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ] Output: ))) Answer: ) ) )
+total_tokens_k: 0.244k, prompt_tokens_k: 0.215k, completion_tokens_k: 0.029k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > >'}
+Success: True, Question: { < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > > Output: )]} Answer: ) ] }
+total_tokens_k: 0.296k, prompt_tokens_k: 0.241k, completion_tokens_k: 0.055k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '[ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ]'}
+Success: True, Question: [ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ] Output: ] Answer: ]
+total_tokens_k: 0.244k, prompt_tokens_k: 0.215k, completion_tokens_k: 0.029k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '< ( { } ) ('}
+Success: True, Question: < ( { } ) ( Output: )> Answer: ) >
+total_tokens_k: 0.206k, prompt_tokens_k: 0.196k, completion_tokens_k: 0.01k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+{'sequence': '{ ( ( { < [ < > ] { [ [ ( ) ] ] } > }'}
+Success: True, Question: { ( ( { < [ < > ] { [ [ ( ) ] ] } > } Output: ))} Answer: ) ) }
+total_tokens_k: 0.232k, prompt_tokens_k: 0.209k, completion_tokens_k: 0.023k
+
+Process finished with exit code 0

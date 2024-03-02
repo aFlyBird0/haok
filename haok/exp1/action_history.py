@@ -121,7 +121,7 @@ tracking_shuffled_five_objects_action_history = ActionHistory(
 )
 
 if __name__ == '__main__':
-    action_histories = [tracking_shuffled_five_objects_action_history]
+    action_histories = [dyck_languages_action_history]
 
     for action_history in action_histories:
         print(action_history)
