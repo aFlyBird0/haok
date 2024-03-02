@@ -1,0 +1,2 @@
+{"question": "Turn left. Turn around. Take 7 steps. Turn left. Turn right. Turn around. Take 7 steps.", "answer": "True", "output": "False", "success": false, "total_tokens_k": 0.219, "prompt_tokens_k": 0.191, "completion_tokens_k": 0.028}
+{"question": "Take 10 steps. Turn left. Turn left. Take 9 steps. Take 3 steps. Take 3 steps. Turn around. Take 5 steps.", "answer": "True", "output": "False", "success": false, "total_tokens_k": 0.236, "prompt_tokens_k": 0.199, "completion_tokens_k": 0.037}

@@ -1,0 +1,2 @@
+{"question": "Turn right. Take 9 steps. Turn around. Take 6 steps. Take 3 steps. Turn left.", "answer": "True", "output": "ValueError(\"invalid literal for int() with base 10: 'steps'\")", "success": false, "total_tokens_k": 0.64, "prompt_tokens_k": 0.235, "completion_tokens_k": 0.405}
+{"question": "Turn around. Turn right. Take 7 steps. Turn right.", "answer": "False", "output": "ValueError(\"invalid literal for int() with base 10: 'Turn'\")", "success": false, "total_tokens_k": 0.532, "prompt_tokens_k": 0.225, "completion_tokens_k": 0.307}

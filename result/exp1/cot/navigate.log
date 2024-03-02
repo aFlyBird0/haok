@@ -1,0 +1,1244 @@
+/Users/lhp/Library/Caches/pypoetry/virtualenvs/haok-Gc5Digdj-py3.11/bin/python /Users/lhp/Desktop/haok/haok/exp1/cot_with_tool.py
+Pinged your deployment. You successfully connected to MongoDB!
+检测到已经完成0项，即将跳过
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 1 step', 'Take 2 steps', 'Take 3 steps', 'Turn around', 'Take 6 steps', 'Turn left']
+result = return_to_start(instructions)
+print(result)
+WARNING:langchain_community.utilities.python:Python REPL can execute arbitrary code. Use with caution.
+Success: True, Question: Take 1 step. Take 2 steps. Take 3 steps. Turn around. Take 6 steps. Turn left. Output: True Answer: True
+total_tokens_k: 0.636k, prompt_tokens_k: 0.237k, completion_tokens_k: 0.399k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if 'Take' in instruction:
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif 'Turn right' in instruction:
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif 'Turn around' in instruction:
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 7 steps', 'Take 3 steps', 'Take 3 steps', 'Turn around', 'Take 4 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 7 steps. Take 3 steps. Take 3 steps. Turn around. Take 4 steps. Output: False Answer: False
+total_tokens_k: 0.555k, prompt_tokens_k: 0.234k, completion_tokens_k: 0.321k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_starting_point(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+    return x == 0 and y == 0
+
+instructions = ['Take 7 steps', 'Take 3 steps', 'Turn right', 'Take 8 steps', 'Take 1 step']
+result = return_to_starting_point(instructions)
+print(result)
+Success: True, Question: Take 7 steps. Take 3 steps. Turn right. Take 8 steps. Take 1 step. Output: False Answer: False
+total_tokens_k: 0.485k, prompt_tokens_k: 0.234k, completion_tokens_k: 0.251k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Turn right', 'Take 6 steps', 'Take 2 steps', 'Turn around', 'Take 7 steps', 'Take 1 step']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn right. Take 6 steps. Take 2 steps. Turn around. Take 7 steps. Take 1 step. Output: True Answer: True
+total_tokens_k: 0.561k, prompt_tokens_k: 0.237k, completion_tokens_k: 0.324k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 5 steps', 'Turn around', 'Take 5 steps', 'Turn around']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 5 steps. Turn around. Take 5 steps. Turn around. Output: True Answer: True
+total_tokens_k: 0.54k, prompt_tokens_k: 0.227k, completion_tokens_k: 0.313k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 10 steps', 'Turn around', 'Take 2 steps', 'Take 8 steps', 'Turn right']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 10 steps. Turn around. Take 2 steps. Take 8 steps. Turn right. Output: True Answer: True
+total_tokens_k: 0.551k, prompt_tokens_k: 0.232k, completion_tokens_k: 0.319k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 1 step', 'Take 8 steps', 'Turn around', 'Take 9 steps', 'Turn left']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 1 step. Take 8 steps. Turn around. Take 9 steps. Turn left. Output: True Answer: True
+total_tokens_k: 0.624k, prompt_tokens_k: 0.232k, completion_tokens_k: 0.392k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def is_return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 3 steps', 'Take 4 steps', 'Turn around', 'Take 1 step', 'Take 6 steps']
+result = is_return_to_start(instructions)
+print(result)
+Success: True, Question: Take 3 steps. Take 4 steps. Turn around. Take 1 step. Take 6 steps. Output: True Answer: True
+total_tokens_k: 0.557k, prompt_tokens_k: 0.234k, completion_tokens_k: 0.323k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'E'
+        else:
+            if direction == 'N':
+                y += int(instruction.split()[2])
+            elif direction == 'S':
+                y -= int(instruction.split()[2])
+            elif direction == 'E':
+                x += int(instruction.split()[2])
+            elif direction == 'W':
+                x -= int(instruction.split()[2])
+    return x == 0 and y == 0
+
+instructions = ['Turn right', 'Take 9 steps', 'Turn around', 'Take 6 steps', 'Take 3 steps', 'Turn left']
+result = return_to_start(instructions)
+print(result)
+Success: False, Question: Turn right. Take 9 steps. Turn around. Take 6 steps. Take 3 steps. Turn left. Output: ValueError("invalid literal for int() with base 10: 'steps'") Answer: True
+total_tokens_k: 0.64k, prompt_tokens_k: 0.235k, completion_tokens_k: 0.405k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'up'
+    for instruction in instructions.split('. '):
+        if instruction == 'Turn around':
+            if direction == 'up':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'up'
+            elif direction == 'left':
+                direction = 'right'
+            elif direction == 'right':
+                direction = 'left'
+        elif instruction == 'Turn right':
+            if direction == 'up':
+                direction = 'right'
+            elif direction == 'down':
+                direction = 'left'
+            elif direction == 'left':
+                direction = 'up'
+            elif direction == 'right':
+                direction = 'down'
+        else:
+            steps = int(instruction.split(' ')[-2])
+            if direction == 'up':
+                y += steps
+            elif direction == 'down':
+                y -= steps
+            elif direction == 'left':
+                x -= steps
+            elif direction == 'right':
+                x += steps
+    return x == 0 and y == 0
+
+instructions = 'Turn around. Turn right. Take 7 steps. Turn right.'
+result = return_to_start(instructions)
+print(result)
+Success: False, Question: Turn around. Turn right. Take 7 steps. Turn right. Output: ValueError("invalid literal for int() with base 10: 'Turn'") Answer: False
+total_tokens_k: 0.532k, prompt_tokens_k: 0.225k, completion_tokens_k: 0.307k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+    return x == 0 and y == 0
+
+instructions = ['Take 1 step', 'Take 5 steps', 'Take 1 step', 'Turn left', 'Turn left', 'Take 9 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 1 step. Take 5 steps. Take 1 step. Turn left. Turn left. Take 9 steps. Output: False Answer: False
+total_tokens_k: 0.562k, prompt_tokens_k: 0.237k, completion_tokens_k: 0.325k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if 'Take' in instruction:
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif 'Turn right' in instruction:
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif 'Turn around' in instruction:
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 6 steps', 'Take 7 steps', 'Take 10 steps', 'Take 6 steps', 'Turn around', 'Take 8 steps', 'Take 3 steps', 'Take 10 steps', 'Take 8 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 6 steps. Take 7 steps. Take 10 steps. Take 6 steps. Turn around. Take 8 steps. Take 3 steps. Take 10 steps. Take 8 steps. Output: True Answer: True
+total_tokens_k: 0.599k, prompt_tokens_k: 0.254k, completion_tokens_k: 0.345k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Turn right', 'Take 4 steps', 'Take 8 steps', 'Turn around', 'Take 7 steps', 'Take 2 steps', 'Take 3 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn right. Take 4 steps. Take 8 steps. Turn around. Take 7 steps. Take 2 steps. Take 3 steps. Output: True Answer: True
+total_tokens_k: 0.572k, prompt_tokens_k: 0.242k, completion_tokens_k: 0.33k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions.split('. '):
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'N'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split(' ')[-2])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = 'Turn right. Take 3 steps. Turn around. Take 3 steps. Turn left.'
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn right. Take 3 steps. Turn around. Take 3 steps. Turn left. Output: True Answer: True
+total_tokens_k: 0.621k, prompt_tokens_k: 0.23k, completion_tokens_k: 0.391k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 7 steps', 'Turn around', 'Take 4 steps', 'Take 5 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 7 steps. Turn around. Take 4 steps. Take 5 steps. Output: False Answer: False
+total_tokens_k: 0.544k, prompt_tokens_k: 0.229k, completion_tokens_k: 0.315k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 9 steps', 'Turn around', 'Take 9 steps', 'Turn left']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 9 steps. Turn around. Take 9 steps. Turn left. Output: True Answer: True
+total_tokens_k: 0.613k, prompt_tokens_k: 0.227k, completion_tokens_k: 0.386k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def is_return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'up'
+    for instruction in instructions:
+        if instruction == 'Turn left':
+            if direction == 'up':
+                direction = 'left'
+            elif direction == 'left':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'right'
+            else:
+                direction = 'up'
+        elif instruction == 'Turn right':
+            if direction == 'up':
+                direction = 'right'
+            elif direction == 'right':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'left'
+            else:
+                direction = 'up'
+        elif instruction == 'Turn around':
+            if direction == 'up':
+                direction = 'down'
+            elif direction == 'right':
+                direction = 'left'
+            elif direction == 'down':
+                direction = 'up'
+            else:
+                direction = 'right'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split(' ')[1])
+            if direction == 'up':
+                y += steps
+            elif direction == 'right':
+                x += steps
+            elif direction == 'down':
+                y -= steps
+            else:
+                x -= steps
+    return x == 0 and y == 0
+
+instructions = ['Turn left', 'Turn right', 'Turn around', 'Turn left', 'Take 4 steps', 'Turn left', 'Turn around', 'Take 3 steps']
+result = is_return_to_start(instructions)
+print(result)
+Success: True, Question: Turn left. Turn right. Turn around. Turn left. Take 4 steps. Turn left. Turn around. Take 3 steps. Output: False Answer: False
+total_tokens_k: 0.625k, prompt_tokens_k: 0.239k, completion_tokens_k: 0.386k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+    return x == 0 and y == 0
+
+instructions = ['Take 2 steps', 'Take 5 steps', 'Take 10 steps', 'Take 2 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 2 steps. Take 5 steps. Take 10 steps. Take 2 steps. Output: False Answer: False
+total_tokens_k: 0.473k, prompt_tokens_k: 0.231k, completion_tokens_k: 0.242k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x = 0
+    y = 0
+    direction = 'N'
+    for instruction in instructions:
+        if 'Take' in instruction:
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif 'Turn right' in instruction:
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+    return x == 0 and y == 0
+
+instructions = ['Take 3 steps', 'Take 10 steps', 'Take 4 steps', 'Take 1 step']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 3 steps. Take 10 steps. Take 4 steps. Take 1 step. Output: False Answer: False
+total_tokens_k: 0.474k, prompt_tokens_k: 0.231k, completion_tokens_k: 0.243k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 10 steps', 'Take 7 steps', 'Take 4 steps', 'Take 7 steps', 'Turn left', 'Take 7 steps', 'Turn around']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 10 steps. Take 7 steps. Take 4 steps. Take 7 steps. Turn left. Take 7 steps. Turn around. Output: False Answer: False
+total_tokens_k: 0.647k, prompt_tokens_k: 0.242k, completion_tokens_k: 0.405k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 2 steps', 'Take 9 steps', 'Turn around', 'Take 9 steps', 'Turn right']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 2 steps. Take 9 steps. Turn around. Take 9 steps. Turn right. Output: False Answer: False
+total_tokens_k: 0.55k, prompt_tokens_k: 0.232k, completion_tokens_k: 0.318k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+    return x == 0 and y == 0
+
+instructions = ['Take 8 steps', 'Take 4 steps', 'Take 4 steps', 'Take 2 steps', 'Take 7 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 8 steps. Take 4 steps. Take 4 steps. Take 2 steps. Take 7 steps. Output: False Answer: False
+total_tokens_k: 0.484k, prompt_tokens_k: 0.236k, completion_tokens_k: 0.248k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if 'Take' in instruction:
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif 'Turn right' in instruction:
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif 'Turn around' in instruction:
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 7 steps', 'Take 10 steps', 'Turn around', 'Take 3 steps', 'Take 2 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 7 steps. Take 10 steps. Turn around. Take 3 steps. Take 2 steps. Output: False Answer: False
+total_tokens_k: 0.555k, prompt_tokens_k: 0.234k, completion_tokens_k: 0.321k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 6 steps', 'Take 1 step', 'Take 7 steps', 'Take 2 steps', 'Turn around', 'Take 7 steps', 'Take 9 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Take 6 steps. Take 1 step. Take 7 steps. Take 2 steps. Turn around. Take 7 steps. Take 9 steps. Output: True Answer: True
+total_tokens_k: 0.577k, prompt_tokens_k: 0.244k, completion_tokens_k: 0.333k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+    return x == 0 and y == 0
+
+instructions = ['Turn right', 'Take 9 steps', 'Turn around', 'Take 9 steps', 'Turn right']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn right. Take 9 steps. Turn around. Take 9 steps. Turn right. Output: True Answer: True
+total_tokens_k: 0.547k, prompt_tokens_k: 0.23k, completion_tokens_k: 0.317k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:openai._base_client:Retrying request to /chat/completions in 0.863676 seconds
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'up'
+    for instruction in instructions:
+        if instruction == 'Turn left':
+            if direction == 'up':
+                direction = 'left'
+            elif direction == 'left':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'right'
+            else:
+                direction = 'up'
+        elif instruction == 'Turn right':
+            if direction == 'up':
+                direction = 'right'
+            elif direction == 'right':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'left'
+            else:
+                direction = 'up'
+        elif instruction == 'Turn around':
+            if direction == 'up':
+                direction = 'down'
+            elif direction == 'right':
+                direction = 'left'
+            elif direction == 'down':
+                direction = 'up'
+            else:
+                direction = 'right'
+        else:
+            steps = int(instruction.split(' ')[-2])
+            if direction == 'up':
+                y += steps
+            elif direction == 'right':
+                x += steps
+            elif direction == 'down':
+                y -= steps
+            else:
+                x -= steps
+    return x == 0 and y == 0
+
+instructions = ['Turn left', 'Turn around', 'Take 7 steps', 'Turn left', 'Turn right', 'Turn around', 'Take 7 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn left. Turn around. Take 7 steps. Turn left. Turn right. Turn around. Take 7 steps. Output: True Answer: True
+total_tokens_k: 0.612k, prompt_tokens_k: 0.236k, completion_tokens_k: 0.376k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'up'
+    for instruction in instructions:
+        if instruction == 'Turn around':
+            if direction == 'up':
+                direction = 'down'
+            elif direction == 'down':
+                direction = 'up'
+            elif direction == 'left':
+                direction = 'right'
+            elif direction == 'right':
+                direction = 'left'
+        elif instruction == 'Turn right':
+            if direction == 'up':
+                direction = 'right'
+            elif direction == 'down':
+                direction = 'left'
+            elif direction == 'left':
+                direction = 'up'
+            elif direction == 'right':
+                direction = 'down'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'up':
+                y += steps
+            elif direction == 'down':
+                y -= steps
+            elif direction == 'left':
+                x -= steps
+            elif direction == 'right':
+                x += steps
+    return x == 0 and y == 0
+
+instructions = ['Turn around', 'Turn right', 'Turn right', 'Take 1 step', 'Take 9 steps', 'Turn around', 'Take 10 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn around. Turn right. Turn right. Take 1 step. Take 9 steps. Turn around. Take 10 steps. Output: True Answer: True
+total_tokens_k: 0.564k, prompt_tokens_k: 0.238k, completion_tokens_k: 0.326k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+    return x == 0 and y == 0
+
+instructions = ['Turn right', 'Take 4 steps', 'Take 2 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn right. Take 4 steps. Take 2 steps. Output: False Answer: False
+total_tokens_k: 0.459k, prompt_tokens_k: 0.224k, completion_tokens_k: 0.235k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'E'
+            else:
+                direction = 'N'
+        elif instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            else:
+                x -= steps
+        else:
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            else:
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Turn left', 'Take 6 steps', 'Take 5 steps', 'Take 7 steps', 'Turn around', 'Take 9 steps', 'Take 9 steps']
+result = return_to_start(instructions)
+print(result)
+Success: True, Question: Turn left. Take 6 steps. Take 5 steps. Take 7 steps. Turn around. Take 9 steps. Take 9 steps. Output: True Answer: True
+total_tokens_k: 0.551k, prompt_tokens_k: 0.242k, completion_tokens_k: 0.309k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def is_return_to_start(instructions):
+    x, y = 0, 0
+    direction = 'N'
+    for instruction in instructions:
+        if instruction.startswith('Take'):
+            steps = int(instruction.split()[1])
+            if direction == 'N':
+                y += steps
+            elif direction == 'E':
+                x += steps
+            elif direction == 'S':
+                y -= steps
+            elif direction == 'W':
+                x -= steps
+        elif instruction == 'Turn right':
+            if direction == 'N':
+                direction = 'E'
+            elif direction == 'E':
+                direction = 'S'
+            elif direction == 'S':
+                direction = 'W'
+            elif direction == 'W':
+                direction = 'N'
+        elif instruction == 'Turn left':
+            if direction == 'N':
+                direction = 'W'
+            elif direction == 'E':
+                direction = 'N'
+            elif direction == 'S':
+                direction = 'E'
+            elif direction == 'W':
+                direction = 'S'
+        elif instruction == 'Turn around':
+            if direction == 'N':
+                direction = 'S'
+            elif direction == 'E':
+                direction = 'W'
+            elif direction == 'S':
+                direction = 'N'
+            elif direction == 'W':
+                direction = 'E'
+    return x == 0 and y == 0
+
+instructions = ['Take 10 steps', 'Turn left', 'Turn left', 'Take 9 steps', 'Take 3 steps', 'Take 3 steps', 'Turn around', 'Take 5 steps']
+result = is_return_to_start(instructions)
+print(result)
+Success: True, Question: Take 10 steps. Turn left. Turn left. Take 9 steps. Take 3 steps. Take 3 steps. Turn around. Take 5 steps. Output: True Answer: True
+total_tokens_k: 0.656k, prompt_tokens_k: 0.245k, completion_tokens_k: 0.411k
+
+Process finished with exit code 0

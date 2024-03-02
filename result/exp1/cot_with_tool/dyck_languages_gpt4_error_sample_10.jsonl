@@ -1,0 +1,8 @@
+{"question": "{ [ [ [ { [ ] } ] ]", "answer": "] }", "output": "KeyError('[')", "success": false, "total_tokens_k": 0.408, "prompt_tokens_k": 0.258, "completion_tokens_k": 0.15}
+{"question": "[ [", "answer": "] ]", "output": "KeyError('[')", "success": false, "total_tokens_k": 0.372, "prompt_tokens_k": 0.25, "completion_tokens_k": 0.122}
+{"question": "[ <", "answer": "> ]", "output": "]>", "success": false, "total_tokens_k": 0.422, "prompt_tokens_k": 0.25, "completion_tokens_k": 0.172}
+{"question": "{ { < { < > } > } [ ( < < > > ) [ { < ( ) > } ] ] [ ] } < ( { [ < [ { [ ( ) ] } ] > < { ( [ [ [ { } < > { ( < { [ ] } > ( ) ) } ] ] ] ) } > ] } )", "answer": ">", "output": "<", "success": false, "total_tokens_k": 0.512, "prompt_tokens_k": 0.321, "completion_tokens_k": 0.191}
+{"question": "{ ( < { } > < > )", "answer": "}", "output": "KeyError('{')", "success": false, "total_tokens_k": 0.386, "prompt_tokens_k": 0.257, "completion_tokens_k": 0.129}
+{"question": "[ ] { < > } < (", "answer": ") >", "output": "KeyError('<')", "success": false, "total_tokens_k": 0.39, "prompt_tokens_k": 0.256, "completion_tokens_k": 0.134}
+{"question": "< ( < < ( ) [ ] > >", "answer": ") >", "output": "(<", "success": false, "total_tokens_k": 0.388, "prompt_tokens_k": 0.258, "completion_tokens_k": 0.13}
+{"question": "( ( { ( < > )", "answer": "} ) )", "output": "KeyError('(')", "success": false, "total_tokens_k": 0.388, "prompt_tokens_k": 0.255, "completion_tokens_k": 0.133}

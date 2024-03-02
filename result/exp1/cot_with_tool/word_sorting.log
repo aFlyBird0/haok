@@ -1,0 +1,336 @@
+/Users/lhp/Library/Caches/pypoetry/virtualenvs/haok-Gc5Digdj-py3.11/bin/python /Users/lhp/Desktop/haok/haok/exp1/cot_with_tool.py
+Pinged your deployment. You successfully connected to MongoDB!
+检测到已经完成0项，即将跳过
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'stick gelatine'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+WARNING:langchain_community.utilities.python:Python REPL can execute arbitrary code. Use with caution.
+run python code: words = 'stick gelatine'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: stick gelatine Output: gelatine stick Answer: gelatine stick
+total_tokens_k: 0.222k, prompt_tokens_k: 0.19k, completion_tokens_k: 0.032k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'bookseller irresistible'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'bookseller irresistible'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: bookseller irresistible Output: bookseller irresistible Answer: bookseller irresistible
+total_tokens_k: 0.22k, prompt_tokens_k: 0.189k, completion_tokens_k: 0.031k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'eddy sabbath imperturbable'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'eddy sabbath imperturbable'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: eddy sabbath imperturbable Output: eddy imperturbable sabbath Answer: eddy imperturbable sabbath
+total_tokens_k: 0.232k, prompt_tokens_k: 0.195k, completion_tokens_k: 0.037k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'aldehyde counterintuitive observant'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'aldehyde counterintuitive observant'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: aldehyde counterintuitive observant Output: aldehyde counterintuitive observant Answer: aldehyde counterintuitive observant
+total_tokens_k: 0.228k, prompt_tokens_k: 0.193k, completion_tokens_k: 0.035k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = ['ecosystem', 'cloudy', 'ferret', 'knotty']
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = ['ecosystem', 'cloudy', 'ferret', 'knotty']
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: ecosystem cloudy ferret knotty Output: cloudy ecosystem ferret knotty Answer: cloudy ecosystem ferret knotty
+total_tokens_k: 0.236k, prompt_tokens_k: 0.194k, completion_tokens_k: 0.042k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'seaport lobscouse telephoto foray handymen'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: seaport lobscouse telephoto foray handymen Output: foray handymen lobscouse seaport telephoto Answer: foray handymen lobscouse seaport telephoto
+total_tokens_k: 0.24k, prompt_tokens_k: 0.199k, completion_tokens_k: 0.041k
+INFO:haok.loggers.logs:run python code: words = 'seaport lobscouse telephoto foray handymen'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'sioux fortescue purloin percept helmsman'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: sioux fortescue purloin percept helmsman Output: fortescue helmsman percept purloin sioux Answer: fortescue helmsman percept purloin sioux
+total_tokens_k: 0.238k, prompt_tokens_k: 0.198k, completion_tokens_k: 0.04k
+INFO:haok.loggers.logs:run python code: words = 'sioux fortescue purloin percept helmsman'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'high mafia entry verdi munch inboard'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: high mafia entry verdi munch inboard Output: entry high inboard mafia munch verdi Answer: entry high inboard mafia munch verdi
+total_tokens_k: 0.23k, prompt_tokens_k: 0.194k, completion_tokens_k: 0.036k
+INFO:haok.loggers.logs:run python code: words = 'high mafia entry verdi munch inboard'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'abalone cannabis knudson implantation bumpkin naples entranceway'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'abalone cannabis knudson implantation bumpkin naples entranceway'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: abalone cannabis knudson implantation bumpkin naples entranceway Output: abalone bumpkin cannabis entranceway implantation knudson naples Answer: abalone bumpkin cannabis entranceway implantation knudson naples
+total_tokens_k: 0.24k, prompt_tokens_k: 0.199k, completion_tokens_k: 0.041k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'coastal aesthetic secretariat canadian insistent moneywort suburbia'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'coastal aesthetic secretariat canadian insistent moneywort suburbia'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: coastal aesthetic secretariat canadian insistent moneywort suburbia Output: aesthetic canadian coastal insistent moneywort secretariat suburbia Answer: aesthetic canadian coastal insistent moneywort secretariat suburbia
+total_tokens_k: 0.24k, prompt_tokens_k: 0.199k, completion_tokens_k: 0.041k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'bryophyte extrema lycee crumb typic muffle windowsill fisticuff'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'bryophyte extrema lycee crumb typic muffle windowsill fisticuff'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: bryophyte extrema lycee crumb typic muffle windowsill fisticuff Output: bryophyte crumb extrema fisticuff lycee muffle typic windowsill Answer: bryophyte crumb extrema fisticuff lycee muffle typic windowsill
+total_tokens_k: 0.25k, prompt_tokens_k: 0.204k, completion_tokens_k: 0.046k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'befit extramarital erudite rung squirmy hibbard seam infighting'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'befit extramarital erudite rung squirmy hibbard seam infighting'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: befit extramarital erudite rung squirmy hibbard seam infighting Output: befit erudite extramarital hibbard infighting rung seam squirmy Answer: befit erudite extramarital hibbard infighting rung seam squirmy
+total_tokens_k: 0.25k, prompt_tokens_k: 0.204k, completion_tokens_k: 0.046k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'meredith pillow tee plebian adsorption herewith rheumatic nevada apex'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: meredith pillow tee plebian adsorption herewith rheumatic nevada apex Output: adsorption apex herewith meredith nevada pillow plebian rheumatic tee Answer: adsorption apex herewith meredith nevada pillow plebian rheumatic tee
+total_tokens_k: 0.246k, prompt_tokens_k: 0.202k, completion_tokens_k: 0.044k
+INFO:haok.loggers.logs:run python code: words = 'meredith pillow tee plebian adsorption herewith rheumatic nevada apex'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'britannica sweepstake springtime militia groton acropolis indigent asteroid custodial bighorn'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'britannica sweepstake springtime militia groton acropolis indigent asteroid custodial bighorn'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: britannica sweepstake springtime militia groton acropolis indigent asteroid custodial bighorn Output: acropolis asteroid bighorn britannica custodial groton indigent militia springtime sweepstake Answer: acropolis asteroid bighorn britannica custodial groton indigent militia springtime sweepstake
+total_tokens_k: 0.257k, prompt_tokens_k: 0.208k, completion_tokens_k: 0.049k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = ['rata', 'epitaph', 'squire', 'grenoble', 'aver', 'caesarian', 'mental', 'etruria', 'estuary', 'whip']
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: rata epitaph squire grenoble aver caesarian mental etruria estuary whip Output: aver caesarian epitaph estuary etruria grenoble mental rata squire whip Answer: aver caesarian epitaph estuary etruria grenoble mental rata squire whip
+total_tokens_k: 0.267k, prompt_tokens_k: 0.204k, completion_tokens_k: 0.063k
+INFO:haok.loggers.logs:run python code: words = ['rata', 'epitaph', 'squire', 'grenoble', 'aver', 'caesarian', 'mental', 'etruria', 'estuary', 'whip']
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'strawberry tim rube rampart goucher sting exalt columbia caliphate lubricious swarm'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: strawberry tim rube rampart goucher sting exalt columbia caliphate lubricious swarm Output: caliphate columbia exalt goucher lubricious rampart rube sting strawberry swarm tim Answer: caliphate columbia exalt goucher lubricious rampart rube sting strawberry swarm tim
+total_tokens_k: 0.254k, prompt_tokens_k: 0.206k, completion_tokens_k: 0.048k
+INFO:haok.loggers.logs:run python code: words = 'strawberry tim rube rampart goucher sting exalt columbia caliphate lubricious swarm'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'situate scam eminent obnoxious inter alexis beatitude inductee eocene flagellate kindergarten monologue'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'situate scam eminent obnoxious inter alexis beatitude inductee eocene flagellate kindergarten monologue'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: situate scam eminent obnoxious inter alexis beatitude inductee eocene flagellate kindergarten monologue Output: alexis beatitude eminent eocene flagellate inductee inter kindergarten monologue obnoxious scam situate Answer: alexis beatitude eminent eocene flagellate inductee inter kindergarten monologue obnoxious scam situate
+total_tokens_k: 0.258k, prompt_tokens_k: 0.208k, completion_tokens_k: 0.05k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'threaten as cheyenne accident salaam pax severe dingy pisces antiquity pawnshop immeasurable'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: threaten as cheyenne accident salaam pax severe dingy pisces antiquity pawnshop immeasurable Output: accident antiquity as cheyenne dingy immeasurable pawnshop pax pisces salaam severe threaten Answer: accident antiquity as cheyenne dingy immeasurable pawnshop pax pisces salaam severe threaten
+total_tokens_k: 0.26k, prompt_tokens_k: 0.209k, completion_tokens_k: 0.051k
+INFO:haok.loggers.logs:run python code: words = 'threaten as cheyenne accident salaam pax severe dingy pisces antiquity pawnshop immeasurable'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'hollingsworth handlebar pvc atrophy davis bless morphology thruway teacart michael prefatory cot austenite'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'hollingsworth handlebar pvc atrophy davis bless morphology thruway teacart michael prefatory cot austenite'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: hollingsworth handlebar pvc atrophy davis bless morphology thruway teacart michael prefatory cot austenite Output: atrophy austenite bless cot davis handlebar hollingsworth michael morphology prefatory pvc teacart thruway Answer: atrophy austenite bless cot davis handlebar hollingsworth michael morphology prefatory pvc teacart thruway
+total_tokens_k: 0.265k, prompt_tokens_k: 0.211k, completion_tokens_k: 0.054k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'amber fag gaugeable bitterroot scenery sidearm sulky complementary cadillac there'll cyclotron bray necromantic'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'amber fag gaugeable bitterroot scenery sidearm sulky complementary cadillac there'll cyclotron bray necromantic'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: False, Question: amber fag gaugeable bitterroot scenery sidearm sulky complementary cadillac there'll cyclotron bray necromantic Output: SyntaxError('unterminated string literal (detected at line 1)', ('<string>', 1, 121, "words = 'amber fag gaugeable bitterroot scenery sidearm sulky complementary cadillac there'll cyclotron bray necromantic'.split()", 1, 121)) Answer: amber bitterroot bray cadillac complementary cyclotron fag gaugeable necromantic scenery sidearm sulky there'll
+total_tokens_k: 0.262k, prompt_tokens_k: 0.21k, completion_tokens_k: 0.052k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'bentley scythia madonna quadrillion jewish succession frosty nitrate elevenfold xi valuate backstitch usual trig'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: bentley scythia madonna quadrillion jewish succession frosty nitrate elevenfold xi valuate backstitch usual trig Output: backstitch bentley elevenfold frosty jewish madonna nitrate quadrillion scythia succession trig usual valuate xi Answer: backstitch bentley elevenfold frosty jewish madonna nitrate quadrillion scythia succession trig usual valuate xi
+total_tokens_k: 0.265k, prompt_tokens_k: 0.211k, completion_tokens_k: 0.054k
+INFO:haok.loggers.logs:run python code: words = 'bentley scythia madonna quadrillion jewish succession frosty nitrate elevenfold xi valuate backstitch usual trig'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'equilateral anther qua bakelite music dryden candelabra immigrate puerto captious pickford tim emptyhanded examine dietrich'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: equilateral anther qua bakelite music dryden candelabra immigrate puerto captious pickford tim emptyhanded examine dietrich Output: anther bakelite candelabra captious dietrich dryden emptyhanded equilateral examine immigrate music pickford puerto qua tim Answer: anther bakelite candelabra captious dietrich dryden emptyhanded equilateral examine immigrate music pickford puerto qua tim
+total_tokens_k: 0.268k, prompt_tokens_k: 0.213k, completion_tokens_k: 0.055k
+INFO:haok.loggers.logs:run python code: words = 'equilateral anther qua bakelite music dryden candelabra immigrate puerto captious pickford tim emptyhanded examine dietrich'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'clench hornmouth philanthropy cubit sternberg foodstuff elliott spectrography eduardo brassiere knudsen sandra sugary circle splint'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'clench hornmouth philanthropy cubit sternberg foodstuff elliott spectrography eduardo brassiere knudsen sandra sugary circle splint'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: clench hornmouth philanthropy cubit sternberg foodstuff elliott spectrography eduardo brassiere knudsen sandra sugary circle splint Output: brassiere circle clench cubit eduardo elliott foodstuff hornmouth knudsen philanthropy sandra spectrography splint sternberg sugary Answer: brassiere circle clench cubit eduardo elliott foodstuff hornmouth knudsen philanthropy sandra spectrography splint sternberg sugary
+total_tokens_k: 0.28k, prompt_tokens_k: 0.219k, completion_tokens_k: 0.061k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'aforesaid adjacent enrollee hattie doug loose merriam considerate rife cranium belittle divisor duet forsook partner afforest'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'aforesaid adjacent enrollee hattie doug loose merriam considerate rife cranium belittle divisor duet forsook partner afforest'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: aforesaid adjacent enrollee hattie doug loose merriam considerate rife cranium belittle divisor duet forsook partner afforest Output: adjacent afforest aforesaid belittle considerate cranium divisor doug duet enrollee forsook hattie loose merriam partner rife Answer: adjacent afforest aforesaid belittle considerate cranium divisor doug duet enrollee forsook hattie loose merriam partner rife
+total_tokens_k: 0.279k, prompt_tokens_k: 0.218k, completion_tokens_k: 0.061k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'bylaw denizen situ gerundive skill grit sight brunch experiential pantheist chummy gestation fledgling stepmother allemand entrepreneur oceanic'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: bylaw denizen situ gerundive skill grit sight brunch experiential pantheist chummy gestation fledgling stepmother allemand entrepreneur oceanic Output: allemand brunch bylaw chummy denizen entrepreneur experiential fledgling gerundive gestation grit oceanic pantheist sight situ skill stepmother Answer: allemand brunch bylaw chummy denizen entrepreneur experiential fledgling gerundive gestation grit oceanic pantheist sight situ skill stepmother
+total_tokens_k: 0.278k, prompt_tokens_k: 0.218k, completion_tokens_k: 0.06k
+INFO:haok.loggers.logs:run python code: words = 'bylaw denizen situ gerundive skill grit sight brunch experiential pantheist chummy gestation fledgling stepmother allemand entrepreneur oceanic'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'afterthought indebted sanctify carrie tribune lacy ingather sibling aide confront guildhall hibernia culpa womb christina scotsman celebratory'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: afterthought indebted sanctify carrie tribune lacy ingather sibling aide confront guildhall hibernia culpa womb christina scotsman celebratory Output: afterthought aide carrie celebratory christina confront culpa guildhall hibernia indebted ingather lacy sanctify scotsman sibling tribune womb Answer: afterthought aide carrie celebratory christina confront culpa guildhall hibernia indebted ingather lacy sanctify scotsman sibling tribune womb
+total_tokens_k: 0.274k, prompt_tokens_k: 0.216k, completion_tokens_k: 0.058k
+INFO:haok.loggers.logs:run python code: words = 'afterthought indebted sanctify carrie tribune lacy ingather sibling aide confront guildhall hibernia culpa womb christina scotsman celebratory'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'irreconcilable din burch shipmate fantasy delectable configure fireboat pigment alum equate bellboy commensurable vesper configuration bandstop papa prothonotary'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'irreconcilable din burch shipmate fantasy delectable configure fireboat pigment alum equate bellboy commensurable vesper configuration bandstop papa prothonotary'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: irreconcilable din burch shipmate fantasy delectable configure fireboat pigment alum equate bellboy commensurable vesper configuration bandstop papa prothonotary Output: alum bandstop bellboy burch commensurable configuration configure delectable din equate fantasy fireboat irreconcilable papa pigment prothonotary shipmate vesper Answer: alum bandstop bellboy burch commensurable configuration configure delectable din equate fantasy fireboat irreconcilable papa pigment prothonotary shipmate vesper
+total_tokens_k: 0.288k, prompt_tokens_k: 0.223k, completion_tokens_k: 0.065k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'stitch steelmake indomitable wigging cubby sheaf pique thymine exotica good mental brake nick rajah lineage choose bunny drone chevalier'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: stitch steelmake indomitable wigging cubby sheaf pique thymine exotica good mental brake nick rajah lineage choose bunny drone chevalier Output: brake bunny chevalier choose cubby drone exotica good indomitable lineage mental nick pique rajah sheaf steelmake stitch thymine wigging Answer: brake bunny chevalier choose cubby drone exotica good indomitable lineage mental nick pique rajah sheaf steelmake stitch thymine wigging
+total_tokens_k: 0.282k, prompt_tokens_k: 0.22k, completion_tokens_k: 0.062k
+INFO:haok.loggers.logs:run python code: words = 'stitch steelmake indomitable wigging cubby sheaf pique thymine exotica good mental brake nick rajah lineage choose bunny drone chevalier'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:haok.loggers.logs:run python code: words = 'freckle radiophysics held blot layton leftmost dint insubstantial macaw pub o'donnell gratitude mackenzie inasmuch lugging sims utensil dovekie sandstone'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+run python code: words = 'freckle radiophysics held blot layton leftmost dint insubstantial macaw pub o'donnell gratitude mackenzie inasmuch lugging sims utensil dovekie sandstone'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: False, Question: freckle radiophysics held blot layton leftmost dint insubstantial macaw pub o'donnell gratitude mackenzie inasmuch lugging sims utensil dovekie sandstone Output: SyntaxError('unterminated string literal (detected at line 1)', ('<string>', 1, 163, "words = 'freckle radiophysics held blot layton leftmost dint insubstantial macaw pub o'donnell gratitude mackenzie inasmuch lugging sims utensil dovekie sandstone'.split()", 1, 163)) Answer: blot dint dovekie freckle gratitude held inasmuch insubstantial layton leftmost lugging macaw mackenzie o'donnell pub radiophysics sandstone sims utensil
+total_tokens_k: 0.289k, prompt_tokens_k: 0.224k, completion_tokens_k: 0.065k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: words = 'teamster trapezoid currant orthonormal wellwisher forest bonfire avernus geld bing oxnard flash laymen lawgiver homework sponge allison mend falkland staley'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+Success: True, Question: teamster trapezoid currant orthonormal wellwisher forest bonfire avernus geld bing oxnard flash laymen lawgiver homework sponge allison mend falkland staley Output: allison avernus bing bonfire currant falkland flash forest geld homework lawgiver laymen mend orthonormal oxnard sponge staley teamster trapezoid wellwisher Answer: allison avernus bing bonfire currant falkland flash forest geld homework lawgiver laymen mend orthonormal oxnard sponge staley teamster trapezoid wellwisher
+total_tokens_k: 0.296k, prompt_tokens_k: 0.227k, completion_tokens_k: 0.069k
+INFO:haok.loggers.logs:run python code: words = 'teamster trapezoid currant orthonormal wellwisher forest bonfire avernus geld bing oxnard flash laymen lawgiver homework sponge allison mend falkland staley'.split()
+words.sort()
+result = ' '.join(words)
+print(result)
+
+Process finished with exit code 0

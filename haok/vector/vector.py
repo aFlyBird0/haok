@@ -1,0 +1,47 @@
+import typing
+
+import chromadb
+from chromadb.utils import embedding_functions
+from haok.config.settings import get_settings
+
+def get_vector_collection(collection_name)->chromadb.Collection:
+    persist_dir = '.chromadb'
+    openai_ef = embedding_functions.OpenAIEmbeddingFunction(
+        # api_base=OpenAIConfig.API_BASE,
+        # api_key=OpenAIConfig.API_KEY,
+        # model_name="text-embedding-ada-002",
+        api_base=get_settings().llm.api_base,
+        api_key=get_settings().llm.api_key,
+        model_name="text-embedding-3-small",
+    )
+    client = chromadb.PersistentClient(persist_dir)
+    collection = client.get_or_create_collection(collection_name, embedding_function=openai_ef)
+    return collection
+
+def save_module_vector(collection:chromadb.Collection, module_name, id):
+    collection.add(documents=[module_name], ids=[id])
+
+def save_plan_vector(collection:chromadb.Collection, tasks: typing.List[str], source_task_id: str):
+    metadata = [{"source_task_id": source_task_id} for _ in tasks]
+    collection.add(documents=tasks, metadatas=metadata, ids=tasks)
+
+def get_similar_module_vectors(collection:chromadb.Collection, task, n_results=1):
+    res = collection.query(query_texts=[task], n_results=n_results)
+    # print(res)
+    # ids = res['ids']
+    # if ids == None or len(ids) == 0:
+    #     return []
+    # return ids
+    return res
+
+def get_similar_plan_vectors(collection:chromadb, task:str, n_results=3):
+    res = collection.query(query_texts=[task], n_results=n_results)
+    return res
+
+if __name__ == '__main__':
+    collection = get_vector_collection(Database.module_collection)
+    collection.add(documents=['鸡兔同笼问题', '算出前5个质数', '质数'], ids=['1', '3', '4'])
+
+    res = get_similar_module_vectors(collection, '质数')
+    print(collection.get())
+    print(res)

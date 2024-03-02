@@ -1,0 +1,30 @@
+{"question": "{ [ [ [ { [ ] } ] ]", "answer": "]}", "output": "]}]}", "success": false, "total_tokens_k": 0.133, "prompt_tokens_k": 0.129, "completion_tokens_k": 0.004}
+{"question": "< [ ( ) [ ( ) ] ] ( [ < ( ( ( < < { [ ] } < [ { } ] > > > [ < [ < [ < < [ { ( { [ { < ( ) > } ] [ ] } ( ) ) } ] ( [ ( ( < ( ) > ) ) ] ) < > > > ] > ] > ] { } ) ) ) > ] )", "answer": ">", "output": "])))>>>", "success": false, "total_tokens_k": 0.211, "prompt_tokens_k": 0.204, "completion_tokens_k": 0.007}
+{"question": "< { [ ( )", "answer": "]}>", "output": "]}>", "success": true, "total_tokens_k": 0.129, "prompt_tokens_k": 0.124, "completion_tokens_k": 0.005}
+{"question": "{ } [", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.123, "prompt_tokens_k": 0.122, "completion_tokens_k": 0.001}
+{"question": "< ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) }", "answer": ")>", "output": ">", "success": false, "total_tokens_k": 0.176, "prompt_tokens_k": 0.173, "completion_tokens_k": 0.003}
+{"question": "< ( < > < > {", "answer": "})>", "output": "}>)>", "success": false, "total_tokens_k": 0.132, "prompt_tokens_k": 0.126, "completion_tokens_k": 0.006}
+{"question": "( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ]", "answer": ")", "output": ")}])])", "success": false, "total_tokens_k": 0.158, "prompt_tokens_k": 0.15, "completion_tokens_k": 0.008}
+{"question": "[ < > ] [ { < { } > { [ ( [ ( ) ] ) ]", "answer": "}}]", "output": "]}}]", "success": false, "total_tokens_k": 0.142, "prompt_tokens_k": 0.138, "completion_tokens_k": 0.004}
+{"question": "{ < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( [", "answer": "])}", "output": "])}", "success": true, "total_tokens_k": 0.177, "prompt_tokens_k": 0.174, "completion_tokens_k": 0.003}
+{"question": "< [ < > < { [ [ ( [ [ { ( { [ ( ) ] } { ( [ ( ( ( [ [ ( { } ) ] ] ) ) ) ] ) } ) } ] ] ) ] ] }", "answer": ">]>", "output": "]}]}>]]>]>", "success": false, "total_tokens_k": 0.176, "prompt_tokens_k": 0.166, "completion_tokens_k": 0.01}
+{"question": "{ ( ( [ [ [ ( { } < < [ { [ { { } } ] } ] > > ) ] { } ( { ( < < ( < < > > ) > > ) } [ ( ( ( [ ( < > ) ] ) ) { [ [ ( ) ] ] } { } ) ] < { } > ) ] { < { [ [ ] ] } > } ] ) ) [ { [ ] }", "answer": "]}", "output": "]}]", "success": false, "total_tokens_k": 0.212, "prompt_tokens_k": 0.209, "completion_tokens_k": 0.003}
+{"question": "{ [ { < > } ]", "answer": "}", "output": "]}", "success": false, "total_tokens_k": 0.13, "prompt_tokens_k": 0.126, "completion_tokens_k": 0.004}
+{"question": "[ { < { { } } > } { { [ < < { } > { < < < { { < > } } > > > { [ < ( < { } ( ( ) ) > ) > ] } < [ [ { ( [ { ( { } ) } ] ) } ] ] > } > ] } } [ { { } [ [ { } ] ] } ]", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.201, "prompt_tokens_k": 0.2, "completion_tokens_k": 0.001}
+{"question": "{ < > < [", "answer": "]>}", "output": "]>}", "success": true, "total_tokens_k": 0.127, "prompt_tokens_k": 0.124, "completion_tokens_k": 0.003}
+{"question": "< { (", "answer": ")}>", "output": ")}>", "success": true, "total_tokens_k": 0.127, "prompt_tokens_k": 0.122, "completion_tokens_k": 0.005}
+{"question": "[ { }", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.123, "prompt_tokens_k": 0.122, "completion_tokens_k": 0.001}
+{"question": "< [ [ [ { } ] ] ] > ( ( [ ]", "answer": "))", "output": "))", "success": true, "total_tokens_k": 0.137, "prompt_tokens_k": 0.133, "completion_tokens_k": 0.004}
+{"question": "{ { ( ) }", "answer": "}", "output": "}}", "success": false, "total_tokens_k": 0.128, "prompt_tokens_k": 0.124, "completion_tokens_k": 0.004}
+{"question": "( ) ( ( < [ ] ( < > ) > )", "answer": ")", "output": "))", "success": false, "total_tokens_k": 0.136, "prompt_tokens_k": 0.132, "completion_tokens_k": 0.004}
+{"question": "( [ ( < ( [ ] ) > ) ]", "answer": ")", "output": ")", "success": true, "total_tokens_k": 0.133, "prompt_tokens_k": 0.13, "completion_tokens_k": 0.003}
+{"question": "< { } [ [ ( ( < { < { [ ] } > } > ) )", "answer": "]]>", "output": "]]]}>", "success": false, "total_tokens_k": 0.143, "prompt_tokens_k": 0.138, "completion_tokens_k": 0.005}
+{"question": "( [ ( { < { ( { { < > } } ) } > }", "answer": ")])", "output": ")])})", "success": false, "total_tokens_k": 0.143, "prompt_tokens_k": 0.136, "completion_tokens_k": 0.007}
+{"question": "{ ( [ { ( < [ { ( ) { } } ] > ) < > } ]", "answer": ")}", "output": ")}])}", "success": false, "total_tokens_k": 0.146, "prompt_tokens_k": 0.139, "completion_tokens_k": 0.007}
+{"question": "[ ] { < { { ( { [ ( [ { < < ( ) [ { } ] ( [ ( ) [ < ( { } ) > [ { } ] ] ( ) ( [ [ ( ( [ < > { { ( ) } } ] ) ( ) ) ] ] ) [ ] ] ) > > } ] ) ] } ) } }", "answer": ">}", "output": "]}>}>}>]}>}]]]", "success": false, "total_tokens_k": 0.207, "prompt_tokens_k": 0.193, "completion_tokens_k": 0.014}
+{"question": "( { } < > { < { ( < > ) } >", "answer": "})", "output": "})", "success": true, "total_tokens_k": 0.137, "prompt_tokens_k": 0.133, "completion_tokens_k": 0.004}
+{"question": "( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ]", "answer": ")))", "output": "])))", "success": false, "total_tokens_k": 0.148, "prompt_tokens_k": 0.144, "completion_tokens_k": 0.004}
+{"question": "{ < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > >", "answer": ")]}", "output": "])}", "success": false, "total_tokens_k": 0.173, "prompt_tokens_k": 0.17, "completion_tokens_k": 0.003}
+{"question": "[ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ]", "answer": "]", "output": "]]", "success": false, "total_tokens_k": 0.146, "prompt_tokens_k": 0.144, "completion_tokens_k": 0.002}
+{"question": "< ( { } ) (", "answer": ")>", "output": ">", "success": false, "total_tokens_k": 0.128, "prompt_tokens_k": 0.125, "completion_tokens_k": 0.003}
+{"question": "{ ( ( { < [ < > ] { [ [ ( ) ] ] } > }", "answer": "))}", "output": ")))})", "success": false, "total_tokens_k": 0.145, "prompt_tokens_k": 0.138, "completion_tokens_k": 0.007}
