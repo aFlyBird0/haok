@@ -14,10 +14,10 @@ def read_jsonl_file(filename):
 
 font = FontProperties(fname=r'/System/Library/Fonts/PingFang.ttc', size=12)
 
-def token_fig(task, token_type, ylabel):
-    few_shot_file = f"result/exp1/cot/{task}.jsonl"
-    few_shot_tool_file = f"result/exp1/cot_with_tool/{task}.jsonl"
-    few_shot_haok_file = f"result/exp1/cot_with_haok/{task}.jsonl"
+def token_fig(task, token_type, ylabel, figure_name, model=''):
+    few_shot_file = f"result/exp1/cot{model}/{task}.jsonl"
+    few_shot_tool_file = f"result/exp1/cot_with_tool{model}/{task}.jsonl"
+    few_shot_haok_file = f"result/exp1/cot_with_haok{model}/{task}.jsonl"
 
     def get_one_token_consume(filename):
         all_results = read_jsonl_file(filename)
@@ -68,21 +68,23 @@ def token_fig(task, token_type, ylabel):
     ax2.legend()
 
     # 添加x轴和y轴的标签
-    ax2.set_xlabel(task+'任务id', fontproperties=font)
-    ax2.set_ylabel(ylabel, fontproperties=font)
+    ax2.set_xlabel('任务编号', fontproperties=font, x=1)
+    ax2.set_ylabel('Token', fontproperties=font, y=1)
+    ax2.set_title(figure_name, y=-0.18, fontproperties=font)
 
 
     # 显示图形
     plt.show()
 
 def total_token_fig(task):
-    return token_fig(task, "total_tokens_k", '总Token消耗')
+    return token_fig(task, "total_tokens_k", '总Token消耗', '(a) '+task+'——总Token消耗', '_gpt4')
 def completion_token_fig(task):
-    return token_fig(task, "completion_tokens_k", '输出（补全）Token消耗')
+    return token_fig(task, "completion_tokens_k", '输出（补全）Token消耗', '(b) '+task+'——输出（补全）Token消耗', '_gpt4')
 
 if __name__ == '__main__':
     # task = "word_sorting"
-    tasks = ["word_sorting", "navigate"]
+    # tasks = ["word_sorting", "navigate"]
+    tasks = ['dyck_languages', 'tracking_shuffled_five_objects']
     for task in tasks:
         total_token_fig(task)
         completion_token_fig(task)

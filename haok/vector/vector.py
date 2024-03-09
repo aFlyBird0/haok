@@ -2,6 +2,8 @@ import typing
 
 import chromadb
 from chromadb.utils import embedding_functions
+
+from haok.config.config import Database
 from haok.config.settings import get_settings
 
 def get_vector_collection(collection_name)->chromadb.Collection:
@@ -21,9 +23,14 @@ def get_vector_collection(collection_name)->chromadb.Collection:
 def save_module_vector(collection:chromadb.Collection, module_name, id):
     collection.add(documents=[module_name], ids=[id])
 
-def save_plan_vector(collection:chromadb.Collection, tasks: typing.List[str], source_task_id: str):
+# 保存数据增强后的任务规划，也就是多个任务描述信息，对应一个任务
+def save_plan_vector_with_data_augmented(collection:chromadb.Collection, tasks: typing.List[str], source_task_id: str):
     metadata = [{"source_task_id": source_task_id} for _ in tasks]
     collection.add(documents=tasks, metadatas=metadata, ids=tasks)
+
+# 保存数据规划，不进行数据增强
+def save_plan_vector(collection:chromadb.Collection, task, id):
+    collection.add(documents=[task], ids=[id])
 
 def get_similar_module_vectors(collection:chromadb.Collection, task, n_results=1):
     res = collection.query(query_texts=[task], n_results=n_results)
@@ -34,7 +41,11 @@ def get_similar_module_vectors(collection:chromadb.Collection, task, n_results=1
     # return ids
     return res
 
-def get_similar_plan_vectors(collection:chromadb, task:str, n_results=3):
+def get_similar_plan_vectors_with_data_augmented(collection:chromadb, task:str, n_results=3):
+    res = collection.query(query_texts=[task], n_results=n_results)
+    return res
+
+def get_similar_plan_vectors(collection:chromadb.Collection, task:str, n_results=10):
     res = collection.query(query_texts=[task], n_results=n_results)
     return res
 

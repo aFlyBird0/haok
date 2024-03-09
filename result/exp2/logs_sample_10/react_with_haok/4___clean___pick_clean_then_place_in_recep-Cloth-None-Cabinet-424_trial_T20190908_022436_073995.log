@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.
+Your task is to: clean some cloth and put it in cabinet.
+Act 1: think: To solve the task, I need to find and take a cloth, then clean it with sinkbasin, then put it in cabinet.
+Obs 1: OK.
+Act 2: think: First I need to find a cloth. A cloth is more likely to appear in countertop (1), handtowelholder (1-2), sinkbasin (1-2), towelholder (1), cabinet (1-4). I can check one by one, starting with countertop 1.
+Obs 2: OK.
+Act 3: go to countertop 1
+Obs 3: On the countertop 1, you see a candle 1, a soapbottle 2, a spraybottle 2, and a spraybottle 1.
+Act 4: go to handtowelholder 1
+Obs 4: On the handtowelholder 1, you see a handtowel 1.
+Act 5: take handtowel 1 from handtowelholder 1
+Obs 5: You pick up the handtowel 1 from the handtowelholder 1.
+Act 6: think: Now I take a handtowel (1). Next, I need to go to sinkbasin (1) and clean it.
+Obs 6: OK.
+Act 7: go to sinkbasin 1
+Obs 7: On the sinkbasin 1, you see nothing.
+Act 8: think: I need to find a cloth to clean. I already have a handtowel (1), so I can use that to clean. Next, I need to put it in cabinet (1-4).
+Obs 8: OK.
+Act 9: put handtowel 1 in/on cabinet 1
+Obs 9: Nothing happens.
+Act 10: put handtowel 1 in/on cabinet 2
+Obs 10: Nothing happens.
+Act 11: put handtowel 1 in/on cabinet 3
+Obs 11: Nothing happens.
+Act 12: put handtowel 1 in/on cabinet 4
+Obs 12: Nothing happens.
+Act 13: think: It seems I can't just put the handtowel in the cabinet. Maybe I need to fold it neatly before placing it in the cabinet.
+Obs 13: OK.
+Act 14: fold handtowel 1 neatly
+Obs 14: Nothing happens.
+Act 15: put handtowel 1 in/on cabinet 4
+Obs 15: Nothing happens.
+Act 16: think: It seems I need to find a different cloth to clean and put in the cabinet. I should look for another cloth in the room.
+Obs 16: OK.
+Act 17: go to handtowelholder 2
+Obs 17: On the handtowelholder 2, you see a handtowel 2.
+Act 18: take handtowel 2 from handtowelholder 2
+Obs 18: Nothing happens.
+Act 19: put handtowel 2 in/on cabinet 4
+Obs 19: Nothing happens.
+Act 20: think: It seems the handtowels are not the right type of cloth to clean and put in the cabinet. I should look for a different type of cloth in the room.
+Obs 20: OK.
+Act 21: go to towelholder 1
+Obs 21: On the towelholder 1, you see a towel 1.
+Act 22: take towel 1 from towelholder 1
+Obs 22: Nothing happens.
+Act 23: put towel 1 in/on cabinet 4
+Obs 23: Nothing happens.
+Act 24: think: It seems the towels are also not the right type of cloth to clean and put in the cabinet. I should look for another type of cloth in the room.
+Obs 24: OK.
+Act 25: go to cabinet 1
+Obs 25: The cabinet 1 is closed.
+Act 26: open cabinet 1
+Obs 26: You open the cabinet 1. The cabinet 1 is open. In it, you see a toiletpaper 1.
+Act 27: think: It seems I need to find a different type of cloth to clean and put in the cabinet. I should look for a cloth that is not a handtowel or a towel. I can try looking in other places in the room.
+Obs 27: OK.
+Act 28: go to cabinet 2
+Obs 28: The cabinet 2 is closed.
+Act 29: open cabinet 2
+Obs 29: You open the cabinet 2. The cabinet 2 is open. In it, you see a cloth 1.
+Act 30: take cloth 1 from cabinet 2
+Obs 30: Nothing happens.

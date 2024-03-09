@@ -3,7 +3,7 @@
 {"question": "< { [ ( )", "answer": "] } >", "output": "]}>", "success": true, "total_tokens_k": 0.204, "prompt_tokens_k": 0.195, "completion_tokens_k": 0.009}
 {"question": "{ } [", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.2, "prompt_tokens_k": 0.193, "completion_tokens_k": 0.007}
 {"question": "< ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) }", "answer": ") >", "output": ")>", "success": true, "total_tokens_k": 0.302, "prompt_tokens_k": 0.244, "completion_tokens_k": 0.058}
-{"question": "< ( < > < > {", "answer": "} ) >", "output": "})>", "success": true, "total_tokens_k": 0.205, "prompt_tokens_k": 0.197, "completion_tokens_k": 0.008}
+{"question": "< ( < > < > {", "answer": "} ) >", "output": "})>", "success": true, "total_tokens_k": 0.208, "prompt_tokens_k": 0.197, "completion_tokens_k": 0.011}
 {"question": "( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ]", "answer": ")", "output": ")", "success": true, "total_tokens_k": 0.256, "prompt_tokens_k": 0.221, "completion_tokens_k": 0.035}
 {"question": "[ < > ] [ { < { } > { [ ( [ ( ) ] ) ]", "answer": "} } ]", "output": "}}]", "success": true, "total_tokens_k": 0.232, "prompt_tokens_k": 0.209, "completion_tokens_k": 0.023}
 {"question": "{ < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( [", "answer": "] ) }", "output": "])}", "success": true, "total_tokens_k": 0.304, "prompt_tokens_k": 0.245, "completion_tokens_k": 0.059}
@@ -15,7 +15,7 @@
 {"question": "< { (", "answer": ") } >", "output": ")}>", "success": true, "total_tokens_k": 0.2, "prompt_tokens_k": 0.193, "completion_tokens_k": 0.007}
 {"question": "[ { }", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.2, "prompt_tokens_k": 0.193, "completion_tokens_k": 0.007}
 {"question": "< [ [ [ { } ] ] ] > ( ( [ ]", "answer": ") )", "output": "))", "success": true, "total_tokens_k": 0.222, "prompt_tokens_k": 0.204, "completion_tokens_k": 0.018}
-{"question": "{ { ( ) }", "answer": "}", "output": "}}", "success": false, "total_tokens_k": 0.201, "prompt_tokens_k": 0.195, "completion_tokens_k": 0.006}
+{"question": "{ { ( ) }", "answer": "}", "output": "}", "success": true, "total_tokens_k": 0.204, "prompt_tokens_k": 0.195, "completion_tokens_k": 0.009}
 {"question": "( ) ( ( < [ ] ( < > ) > )", "answer": ")", "output": ")", "success": true, "total_tokens_k": 0.22, "prompt_tokens_k": 0.203, "completion_tokens_k": 0.017}
 {"question": "( [ ( < ( [ ] ) > ) ]", "answer": ")", "output": ")", "success": true, "total_tokens_k": 0.216, "prompt_tokens_k": 0.201, "completion_tokens_k": 0.015}
 {"question": "< { } [ [ ( ( < { < { [ ] } > } > ) )", "answer": "] ] >", "output": "]]>", "success": true, "total_tokens_k": 0.232, "prompt_tokens_k": 0.209, "completion_tokens_k": 0.023}
@@ -26,5 +26,5 @@
 {"question": "( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ]", "answer": ") ) )", "output": ")))", "success": true, "total_tokens_k": 0.244, "prompt_tokens_k": 0.215, "completion_tokens_k": 0.029}
 {"question": "{ < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > >", "answer": ") ] }", "output": ")]}", "success": true, "total_tokens_k": 0.296, "prompt_tokens_k": 0.241, "completion_tokens_k": 0.055}
 {"question": "[ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ]", "answer": "]", "output": "]", "success": true, "total_tokens_k": 0.244, "prompt_tokens_k": 0.215, "completion_tokens_k": 0.029}
-{"question": "< ( { } ) (", "answer": ") >", "output": ")>", "success": true, "total_tokens_k": 0.204, "prompt_tokens_k": 0.196, "completion_tokens_k": 0.008}
+{"question": "< ( { } ) (", "answer": ") >", "output": ")>", "success": true, "total_tokens_k": 0.206, "prompt_tokens_k": 0.196, "completion_tokens_k": 0.01}
 {"question": "{ ( ( { < [ < > ] { [ [ ( ) ] ] } > }", "answer": ") ) }", "output": "))}", "success": true, "total_tokens_k": 0.232, "prompt_tokens_k": 0.209, "completion_tokens_k": 0.023}

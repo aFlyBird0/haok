@@ -7,4 +7,4 @@ class Database:
     db_name = "cluster0"
     module_collection = "module_test"
     action_history_collection = "action_test"
-    plan_collection = "plan_test"
+    plan_collection = "plan_sample_30"

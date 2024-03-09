@@ -11,9 +11,9 @@ from haok.base_agent.cot import CoT
 
 # task = "word_sorting" 完成
 # task = "navigate" 完成
-# task = "tracking_shuffled_five_objects"
+task = "tracking_shuffled_five_objects"
 # task = "tracking_shuffled_three_objects" 完成
-task = "dyck_languages"
+# task = "dyck_languages"
 action_to_module_index = 1000   # 哪个作为module的例子
 sample_length = 30  # 样本数
 example_index = 500 # 哪个作为example的例子

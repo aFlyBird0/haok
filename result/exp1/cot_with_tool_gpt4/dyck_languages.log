@@ -1,0 +1,672 @@
+/Users/lhp/Library/Caches/pypoetry/virtualenvs/haok-Gc5Digdj-py3.11/bin/python /Users/lhp/Desktop/haok/haok/exp1/cot_with_tool.py
+Pinged your deployment. You successfully connected to MongoDB!
+检测到已经完成0项，即将跳过
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return 'Invalid sequence'
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = '{ [ [ [ { [ ] } ] ]]'
+print(complete_sequence(sequence))
+WARNING:langchain_community.utilities.python:Python REPL can execute arbitrary code. Use with caution.
+Success: False, Question: { [ [ [ { [ ] } ] ] Output: Invalid sequence Answer: ] }
+total_tokens_k: 0.41k, prompt_tokens_k: 0.261k, completion_tokens_k: 0.149k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and pairs[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '< [ ( ) [ ( ) ] ] ( [ < ( ( ( < < { [ ] } < [ { } ] > > > [ < [ < [ < < [ { ( { [ { < ( ) > } ] [ ] } ( ) ) } ] ( [ ( ( < ( ) > ) ) ] ) < > > > ] > ] > ] { } ) ) ) > ] )'
+print(complete_sequence(sequence))
+Success: True, Question: < [ ( ) [ ( ) ] ] ( [ < ( ( ( < < { [ ] } < [ { } ] > > > [ < [ < [ < < [ { ( { [ { < ( ) > } ] [ ] } ( ) ) } ] ( [ ( ( < ( ) > ) ) ] ) < > > > ] > ] > ] { } ) ) ) > ] ) Output: > Answer: >
+total_tokens_k: 0.552k, prompt_tokens_k: 0.336k, completion_tokens_k: 0.216k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and char == brackets[stack[-1]]:
+            stack.pop()
+        else:
+            # If the character is not an opening bracket or the correct closing bracket,
+            # it's an invalid sequence, but we don't need to handle it as per instructions.
+            pass
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[open_bracket] for open_bracket in reversed(stack))
+    return completion
+
+sequence = '< { [ ( )'
+completion = complete_sequence(sequence)
+print(completion)
+Success: True, Question: < { [ ( ) Output: ]}> Answer: ] } >
+total_tokens_k: 0.442k, prompt_tokens_k: 0.256k, completion_tokens_k: 0.186k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif char in brackets.values():
+            if stack and brackets[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    # Complete the sequence
+    completion = ''
+    while stack:
+        completion += brackets[stack.pop()]
+    return completion
+
+sequence = '{ } ['
+print(complete_sequence(sequence))
+Success: True, Question: { } [ Output: ] Answer: ]
+total_tokens_k: 0.403k, prompt_tokens_k: 0.254k, completion_tokens_k: 0.149k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    openers = pairs.values()
+    closers = pairs.keys()
+
+    for char in s:
+        if char in openers:
+            stack.append(char)
+        elif char in closers:
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''
+    for char in reversed(stack):
+        for key, value in pairs.items():
+            if value == char:
+                completion += key
+                break
+
+    return completion
+
+s = '< ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) }'
+print(complete_sequence(s))
+Success: True, Question: < ( < { [ ( { < { } > } < > ) [ { } ] ] } > [ ] ( < > ) < [ [ ( { < > } ) ] ] < ( ) ( ) > [ ] > [ ] { ( ) } Output: )> Answer: ) >
+total_tokens_k: 0.53k, prompt_tokens_k: 0.305k, completion_tokens_k: 0.225k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    reverse_pairs = {v: k for k, v in pairs.items()}
+
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+        else:
+            return 'Invalid character'
+
+    completion = ''.join(reverse_pairs[char] for char in reversed(stack))
+    return completion
+
+s = '<(<><>{'
+print(complete_sequence(s))
+Success: True, Question: < ( < > < > { Output: })> Answer: } ) >
+total_tokens_k: 0.426k, prompt_tokens_k: 0.258k, completion_tokens_k: 0.168k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    openers = pairs.values()
+    closers = pairs.keys()
+
+    for char in s:
+        if char in openers:
+            stack.append(char)
+        elif char in closers:
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''
+    for char in reversed(stack):
+        for key, value in pairs.items():
+            if value == char:
+                completion += key
+                break
+
+    return completion
+
+sequence = "( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ]"
+print(complete_sequence(sequence))
+Success: True, Question: ( { } [ ( [ ] ) ( [ [ < ( { } < { [ < [ ] > ] } > ) > ] ] ) ] Output: ) Answer: )
+total_tokens_k: 0.485k, prompt_tokens_k: 0.282k, completion_tokens_k: 0.203k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: sequence = '[ < > ] [ { < { } > { [ ( [ ( ) ] ) ]'
+
+# Dictionary to match opening and closing brackets
+brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+
+# Stack to keep track of opening brackets
+stack = []
+
+# Iterate through the sequence to find unmatched opening brackets
+for char in sequence:
+    if char in brackets.keys():
+        stack.append(char)
+    elif char in brackets.values() and stack and brackets[stack[-1]] == char:
+        stack.pop()
+
+# Generate the closing sequence for the unmatched opening brackets
+closing_sequence = ''.join(brackets[char] for char in reversed(stack))
+
+print(closing_sequence)
+Success: True, Question: [ < > ] [ { < { } > { [ ( [ ( ) ] ) ] Output: }}] Answer: } } ]
+total_tokens_k: 0.435k, prompt_tokens_k: 0.27k, completion_tokens_k: 0.165k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    pairs = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in pairs.keys():
+            stack.append(char)
+        elif char in pairs.values():
+            if stack and pairs[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '{ < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( ['
+print(complete_sequence(sequence))
+Success: True, Question: { < [ ] > < < ( ( [ { < > } ] { < ( ) ( ( [ < { } > < > ] ) ) > } ) ) > > { { { < ( [ [ ( ) ] ] ) > } } } ( [ Output: ])} Answer: ] ) }
+total_tokens_k: 0.49k, prompt_tokens_k: 0.306k, completion_tokens_k: 0.184k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    reverse_pairs = {v: k for k, v in pairs.items()}
+
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''.join(reverse_pairs[char] for char in reversed(stack))
+    return completion
+
+s = '< [ < > < { [ [ ( [ [ { ( { [ ( ) ] } { ( [ ( ( ( [ [ ( { } ) ] ] ) ) ) ] ) } ) } ] ] ) ] ] }'
+print(complete_sequence(s))
+Success: True, Question: < [ < > < { [ [ ( [ [ { ( { [ ( ) ] } { ( [ ( ( ( [ [ ( { } ) ] ] ) ) ) ] ) } ) } ] ] ) ] ] } Output: >]> Answer: > ] >
+total_tokens_k: 0.498k, prompt_tokens_k: 0.298k, completion_tokens_k: 0.2k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    open_brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in open_brackets:
+            stack.append(char)
+        elif stack and open_brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return "Invalid sequence"
+    completion = ''.join(open_brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = "{ ( ( [ [ [ ( { } < < [ { [ { { } } ] } ] > > ) ] { } ( { ( < < ( < < > > ) > > ) } [ ( ( ( [ ( < > ) ] ) ) { [ [ ( ) ] ] } { } ) ] < { } > ) ] { < { [ [ ] ] } > } ] ) ) [ { [ ] }"
+print(complete_sequence(sequence))
+Success: False, Question: { ( ( [ [ [ ( { } < < [ { [ { { } } ] } ] > > ) ] { } ( { ( < < ( < < > > ) > > ) } [ ( ( ( [ ( < > ) ] ) ) { [ [ ( ) ] ] } { } ) ] < { } > ) ] { < { [ [ ] ] } > } ] ) ) [ { [ ] } Output: Invalid sequence Answer: ] }
+total_tokens_k: 0.556k, prompt_tokens_k: 0.341k, completion_tokens_k: 0.215k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    openers = pairs.values()
+    closers = pairs.keys()
+
+    for char in s:
+        if char in openers:
+            stack.append(char)
+        elif char in closers:
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''
+    for char in reversed(stack):
+        for key, value in pairs.items():
+            if value == char:
+                completion += key
+                break
+
+    return completion
+
+sequence = '{ [ { < > } ]'
+print(complete_sequence(sequence))
+Success: True, Question: { [ { < > } ] Output: } Answer: }
+total_tokens_k: 0.436k, prompt_tokens_k: 0.258k, completion_tokens_k: 0.178k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(seq):
+    open_brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    close_brackets = {v: k for k, v in open_brackets.items()}
+    stack = []
+    for char in seq:
+        if char in open_brackets:
+            stack.append(char)
+        elif char in close_brackets:
+            if stack and stack[-1] == close_brackets[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(open_brackets[char] for char in reversed(stack))
+    return completion
+
+seq = '[ { < { { } } > } { { [ < < { } > { < < < { { < > } } > > > { [ < ( < { } ( ( ) ) > ) > ] } < [ [ { ( [ { ( { } ) } ] ) } ] ] > } > ] } } [ { { } [ [ { } ] ] } ]'
+print(complete_sequence(seq))
+Success: True, Question: [ { < { { } } > } { { [ < < { } > { < < < { { < > } } > > > { [ < ( < { } ( ( ) ) > ) > ] } < [ [ { ( [ { ( { } ) } ] ) } ] ] > } > ] } } [ { { } [ [ { } ] ] } ] Output: ] Answer: ]
+total_tokens_k: 0.571k, prompt_tokens_k: 0.332k, completion_tokens_k: 0.239k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return "Invalid sequence"
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = "{ < > < ["
+print(complete_sequence(sequence))
+Success: False, Question: { < > < [ Output: Invalid sequence Answer: ] > }
+total_tokens_k: 0.399k, prompt_tokens_k: 0.256k, completion_tokens_k: 0.143k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    reverse_pairs = {v: k for k, v in pairs.items()}
+
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''.join(reverse_pairs[char] for char in reversed(stack))
+    return completion
+
+s = '< { ('
+print(complete_sequence(s))
+Success: True, Question: < { ( Output: )}> Answer: ) } >
+total_tokens_k: 0.41k, prompt_tokens_k: 0.254k, completion_tokens_k: 0.156k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return 'Invalid sequence'
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = '[ { }'
+print(complete_sequence(sequence))
+Success: False, Question: [ { } Output: Invalid sequence Answer: ]
+total_tokens_k: 0.395k, prompt_tokens_k: 0.254k, completion_tokens_k: 0.141k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    openers = pairs.values()
+    closers = pairs.keys()
+
+    for char in s:
+        if char in openers:
+            stack.append(char)
+        elif char in closers:
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''
+    while stack:
+        opener = stack.pop()
+        for key, value in pairs.items():
+            if value == opener:
+                completion += key
+                break
+
+    return completion
+
+s = '< [ [ [ { } ] ] ] > ( ( [ ]'
+print(complete_sequence(s))
+Success: True, Question: < [ [ [ { } ] ] ] > ( ( [ ] Output: )) Answer: ) )
+total_tokens_k: 0.454k, prompt_tokens_k: 0.265k, completion_tokens_k: 0.189k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    for char in s:
+        if char in pairs.keys():
+            stack.append(char)
+        elif char in pairs.values():
+            if stack and pairs[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '{ { ( ) }'
+print(complete_sequence(sequence))
+Success: True, Question: { { ( ) } Output: } Answer: }
+total_tokens_k: 0.39k, prompt_tokens_k: 0.256k, completion_tokens_k: 0.134k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: sequence = "( ) ( ( < [ ] ( < > ) > )"
+
+# Mapping of opening and closing brackets
+brackets = {'(': ')', '[': ']', '<': '>', '{': '}'}
+
+# Stack to keep track of opening brackets
+stack = []
+
+# Iterate through the sequence to find unmatched opening brackets
+for char in sequence:
+    if char in brackets.keys():
+        stack.append(char)
+    elif char in brackets.values() and stack:
+        if brackets[stack[-1]] == char:
+            stack.pop()
+
+# Generate the closing sequence for the unmatched opening brackets
+closing_sequence = ''.join([brackets[opening] for opening in reversed(stack)])
+
+print(closing_sequence)
+Success: True, Question: ( ) ( ( < [ ] ( < > ) > ) Output: ) Answer: )
+total_tokens_k: 0.429k, prompt_tokens_k: 0.264k, completion_tokens_k: 0.165k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    openers = pairs.values()
+    closers = pairs.keys()
+
+    for char in s:
+        if char in openers:
+            stack.append(char)
+        elif char in closers:
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''
+    while stack:
+        opener = stack.pop()
+        for key, value in pairs.items():
+            if value == opener:
+                completion += key
+                break
+
+    return completion
+
+s = '( [ ( < ( [ ] ) > ) ]'
+print(complete_sequence(s))
+Success: True, Question: ( [ ( < ( [ ] ) > ) ] Output: ) Answer: )
+total_tokens_k: 0.448k, prompt_tokens_k: 0.262k, completion_tokens_k: 0.186k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: sequence = '< { } [ [ ( ( < { < { [ ] } > } > ) )'
+
+# Mapping of opening and closing brackets
+brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+
+# Stack to keep track of opening brackets
+stack = []
+
+# Iterate through the sequence to find unmatched opening brackets
+for char in sequence:
+    if char in brackets.keys():
+        stack.append(char)
+    elif char in brackets.values() and stack and brackets[stack[-1]] == char:
+        stack.pop()
+
+# Generate the closing sequence for the unmatched opening brackets
+closing_sequence = ''.join(brackets[char] for char in reversed(stack))
+
+print(closing_sequence)
+Success: True, Question: < { } [ [ ( ( < { < { [ ] } > } > ) ) Output: ]]> Answer: ] ] >
+total_tokens_k: 0.434k, prompt_tokens_k: 0.27k, completion_tokens_k: 0.164k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and char == brackets[stack[-1]]:
+            stack.pop()
+        else:
+            return 'Invalid sequence'
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = '( [ ( { < { ( { { < > } } ) } > }'
+print(complete_sequence(sequence))
+Success: False, Question: ( [ ( { < { ( { { < > } } ) } > } Output: Invalid sequence Answer: ) ] )
+total_tokens_k: 0.423k, prompt_tokens_k: 0.268k, completion_tokens_k: 0.155k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    open_brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in open_brackets:
+            stack.append(char)
+        elif stack and open_brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return "Invalid sequence"
+    completion = ''.join(open_brackets[bracket] for bracket in reversed(stack))
+    return completion
+
+sequence = '{ ( [ { ( < [ { ( ) { } } ] > ) < > } ]'
+print(complete_sequence(sequence))
+Success: False, Question: { ( [ { ( < [ { ( ) { } } ] > ) < > } ] Output: Invalid sequence Answer: ) }
+total_tokens_k: 0.418k, prompt_tokens_k: 0.271k, completion_tokens_k: 0.147k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    open_brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in open_brackets:
+            stack.append(char)
+        elif stack and open_brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return 'Invalid sequence'
+    completion = ''.join(open_brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = '[ ] { < { { ( { [ ( [ { < < ( ) [ { } ] ( [ ( ) [ < ( { } ) > [ { } ] ] ( ) ( [ [ ( ( [ < > { { ( ) } } ] ) ( ) ) ] ] ) [ ] ] ) > > } ] ) ] } ) } }'
+print(complete_sequence(sequence))
+Success: False, Question: [ ] { < { { ( { [ ( [ { < < ( ) [ { } ] ( [ ( ) [ < ( { } ) > [ { } ] ] ( ) ( [ [ ( ( [ < > { { ( ) } } ] ) ( ) ) ] ] ) [ ] ] ) > > } ] ) ] } ) } } Output: Invalid sequence Answer: > }
+total_tokens_k: 0.524k, prompt_tokens_k: 0.325k, completion_tokens_k: 0.199k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif char in brackets.values():
+            if stack and brackets[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    # Complete the sequence
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = '( { } < > { < { ( < > ) } >'
+print(complete_sequence(sequence))
+Success: True, Question: ( { } < > { < { ( < > ) } > Output: }) Answer: } )
+total_tokens_k: 0.421k, prompt_tokens_k: 0.265k, completion_tokens_k: 0.156k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    # Mapping of opening and closing brackets
+    brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    stack = []
+    for char in s:
+        if char in brackets:
+            stack.append(char)
+        elif stack and brackets[stack[-1]] == char:
+            stack.pop()
+        else:
+            return "Invalid sequence"
+    # Complete the sequence by closing all open brackets
+    completion = ''.join(brackets[char] for char in reversed(stack))
+    return completion
+
+sequence = "( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ]"
+print(complete_sequence(sequence))
+Success: False, Question: ( ( ( [ [ ( [ [ { < < { ( ) } > > } ] ] < > ) ] ] Output: Invalid sequence Answer: ) ) )
+total_tokens_k: 0.44k, prompt_tokens_k: 0.276k, completion_tokens_k: 0.164k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {'(': ')', '[': ']', '{': '}', '<': '>'}
+    for char in s:
+        if char in pairs.keys():
+            stack.append(char)
+        elif char in pairs.values():
+            if stack and pairs[stack[-1]] == char:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '{ < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > >'
+print(complete_sequence(sequence))
+Success: True, Question: { < [ ( < > [ < < < < > > > > ] ) ] > ( [ [ < > ] [ { } ] ] ) ( ) [ { < > } ( < < { ( ) } ( [ ] ) > > Output: )]} Answer: ) ] }
+total_tokens_k: 0.482k, prompt_tokens_k: 0.302k, completion_tokens_k: 0.18k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<', '(': ')', '[': ']', '{': '}', '<': '>'}
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+    completion = ''.join(pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '[ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ]'
+print(complete_sequence(sequence))
+Success: True, Question: [ [ < { ( [ ( ( ( ( ) ) [ ] ) ) ] ) ( ( ) ) } > ] Output: ] Answer: ]
+total_tokens_k: 0.449k, prompt_tokens_k: 0.276k, completion_tokens_k: 0.173k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: def complete_sequence(s):
+    stack = []
+    pairs = {')': '(', ']': '[', '}': '{', '>': '<'}
+    reverse_pairs = {v: k for k, v in pairs.items()}
+
+    for char in s:
+        if char in '([{<':
+            stack.append(char)
+        elif char in ')]}>':
+            if stack and stack[-1] == pairs[char]:
+                stack.pop()
+            else:
+                return 'Invalid sequence'
+
+    completion = ''.join(reverse_pairs[char] for char in reversed(stack))
+    return completion
+
+sequence = '<({})()'
+print(complete_sequence(sequence))
+Success: False, Question: < ( { } ) ( Output: > Answer: ) >
+total_tokens_k: 0.414k, prompt_tokens_k: 0.257k, completion_tokens_k: 0.157k
+INFO:httpx:HTTP Request: POST https://api.nextapi.fun/v1/chat/completions "HTTP/1.1 200 OK"
+run python code: sequence = '{ ( ( { < [ < > ] { [ [ ( ) ] ] } > }'
+
+# Dictionary to match opening and closing brackets
+brackets = {'(': ')', '[': ']', '{': '}', '<': '>'}
+
+# Stack to keep track of opening brackets
+stack = []
+
+# Result string to store the closing brackets needed to complete the sequence
+result = ''
+
+for char in sequence:
+    if char in brackets.keys():
+        # If char is an opening bracket, push its corresponding closing bracket to the stack
+        stack.append(brackets[char])
+    elif char in brackets.values() and stack:
+        # If char is a closing bracket and the stack is not empty, pop from the stack
+        stack.pop()
+
+# Add the remaining items in the stack (in reverse order) to the result
+result = ''.join(reversed(stack))
+
+print(result)
+Success: True, Question: { ( ( { < [ < > ] { [ [ ( ) ] ] } > } Output: ))} Answer: ) ) }
+total_tokens_k: 0.473k, prompt_tokens_k: 0.27k, completion_tokens_k: 0.203k
+
+Process finished with exit code 0

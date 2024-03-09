@@ -1,0 +1,205 @@
+1. Always confirm the presence of an item before attempting to interact with it.
+
+2. Before using an appliance or storage, ensure it is ready for use. If not, take necessary actions to
+
+prepare it. Once an item is found and prepared (if necessary), it should be placed in the designated location immediately to avoid confusion.
+
+3. If an item is not found in one location, systematically check the next likely location based on the nature of the item and common household organization, without assuming its presence.
+
+4. Prioritize checking locations that are most likely to contain the item you are looking for, based on the nature of the item, common household organization, and the task at hand.
+
+5. If an attempt to interact with an item fails or does not progress the task, reassess the situation and consider alternative actions or locations before repeating the same action.
+
+6. Limit the number of consecutive thoughts without actions to ensure progress in task completion and avoid reaching the maximum allowed number of steps.
+
+7. When an item is found, ensure to specify the item's number and location when interacting with it.
+
+8. Always ensure to check all possible locations before concluding that an item is not present.
+
+9. Keep track of the locations already checked to avoid unnecessary repetition and to save time.
+
+10. When a task involves multiple items of the same type, do not assume that all items will be found in different locations. Some may be found in the same location.
+
+11. When multiple items are involved in a task, ensure to interact with each item in the correct order as per the task requirement.
+
+12. When a task requires examining an item, ensure to physically interact with the item rather than just thinking about examining it.
+
+13. If a task requires cooling an item, consider using appliances that are specifically designed for cooling, such as a fridge or a freezer.
+
+14. When a task requires the use of a specific item, ensure to correctly identify and use the exact item as per the task requirement. Do not confuse it with similar items.
+
+15. When searching for an item, consider the nature of the item and its typical usage. For example, a pan is more likely to be found on a stoveburner or countertop rather than in a cabinet or drawer.
+
+16. When a task requires placing an item in a specific location, ensure the location is suitable and has
+
+enough space for the item. If the location is not suitable, find an alternative location that fulfills the task requirement.
+
+17. When a task requires cleaning an item, consider using a sinkbasin or other suitable cleaning tools or appliances.
+
+18. When a task requires moving an item, ensure to check the destination location's capacity before placing the item to avoid cluttering.
+
+19. When a task involves multiple items of the same type, ensure to keep track of the number of items already found and interacted with to avoid confusion and ensure task completion.
+
+20. When a task requires heating or cooling an item, ensure to use the appropriate appliance such as a
+
+microwave for heating or a fridge for cooling
+
+
+1.在尝试与物品交互之前，始终确认物品的存在。
+
+2.在使用设备或存储之前，确保它已准备好使用。如果没有，请采取必要的措施
+
+准备好。一旦发现并准备好物品（如有必要），应立即将其放置在指定位置，以免混淆。
+
+3.如果一个物品在一个地点没有找到，根据物品的性质和常见的家庭组织，系统地检查下一个可能的地点，而不是假设它存在。
+
+4.根据物品的性质、常见的家庭组织和手头的任务，优先检查最有可能包含您正在寻找的物品的位置。
+
+5.如果尝试与物品交互失败或没有推进任务，请在重复相同操作之前重新评估情况并考虑替代操作或位置。
+
+6.限制连续思考而不采取行动的次数，以确保任务完成进度，避免达到最大允许步数。
+
+7.当找到一个项目时，确保在与之交互时指定该项目的编号和位置。
+
+8.在断定某个项目不存在之前，始终确保检查所有可能的位置。
+
+9.跟踪已经检查过的地点，以避免不必要的重复并节省时间。
+
+10.当一个任务涉及多个相同类型的项目时，不要假设所有项目都会在不同的位置找到。有些可能会在同一个位置找到。
+
+11.当一个任务涉及多个项目时，确保根据任务要求以正确的顺序与每个项目进行交互。
+
+12.当一项任务需要检查一个项目时，确保与该项目进行物理交互，而不仅仅是考虑检查它。
+
+13.如果一项任务需要冷却物品，请考虑使用专门设计用于冷却的电器，例如冰箱或冰柜。
+
+14.当任务需要使用特定项目时，确保根据任务要求正确识别和使用确切的项目。不要将其与类似项目混淆。
+
+15.搜索物品时，考虑物品的性质及其典型用法。例如，平底锅更有可能在炉灶或台面上找到，而不是在橱柜或抽屉里。
+
+16.当任务需要将物品放置在特定位置时，确保该位置合适且具有
+
+物品有足够的空间。如果位置不合适，请找到满足任务要求的替代位置。
+
+17.当任务需要清洁物品时，考虑使用洗脸盆或其他合适的清洁工具或器具。
+
+18.当任务需要移动物品时，确保在放置物品之前检查目的地位置的容量，以免杂乱。
+
+19.当一个任务涉及多个相同类型的项目时，确保跟踪已经找到并与之交互的项目数量，以避免混淆并确保任务完成。
+
+20.当任务需要加热或冷却物品时，确保使用适当的器具，如微波炉加热或冰箱冷却。
+
+You are an advanced reasoning agent that can add, edit or remove rules from your existing rule set, based on forming new critiques of past task trajectories. You will be given...
+
+two previous task trials in which you ...
+
+(Task description] ...
+
+one successful and one
+
+unsuccessful trial. You failed the trial because...
+
+[Task failure reasons].
+
+Here are the two previous
+
+trials to compare
+
+and
+
+critique:
+
+[Failed/Succeeded Trajectories]
+
+B
+
+in successful tasks trials which you ...
+
+(Task description].
+
+Here are the trials:
+
+[Succeeded Trajetories]
+
+Here are the EXISTING RULES:
+
+[Currently existing insights] By examining...
+
+and contrasting to the the successful trials, ...
+
+successful trial, ...
+
+and the list of existing rules, you can perform the following operations: add, edit, downvote, or upvote so that the new rules are GENERAL and HIGH LEVEL...
+
+critiques of the failed trial...
+
+insights of the successful trials..
+
+or proposed way of Thought so they can be used...
+
+to avoid similar failures when as helpful tips to different
+
+encountered
+
+with different tasks in the future.
+
+questions in the future.
+
+Have an emphasis on...
+
+critiquing how to...
+
+tips that help the agent...
+
+perform better Thought and Action.
+
+Follow the below format:
+
+‹ OPERATION> < RULE NUMBER>: < RULE>
+
+The available operations are: UPVOTE (if the existing rule is strongly relevant for the task), DOWNVOTE (if one existing rule is contradictory or similar/duplicated to other existing rules), EDIT (if any existing rule is not general enough or can be enhanced, rewrite and improve it), ADD (add new rules that are very different from existing rules and relevant for other tasks). Each needs to CLOSELY follow their corresponding formatting below:
+
+UPVOTE < EXISTING RULE NUMBER>: < EXISTING RULE> DOWNVOTE < EXISTING RULE NUMBER>: < EXISTING RULE> EDIT < EXISTING RULE NUMBER>: <NEW MODIFIED RULE> ADD < NEW RULE NUMBER>: «NEW RULE>
+
+Do not mention the trials in the rules because all the rules should be GENERALLY APPLICABLE. Each rule should be concise and easy to follow. Any operation can be used MULTIPLE times.
+
+Do at most 4 operations and each existing rule can only get a maximum of 1 operation. Below are the operations you do to the above list of EXISTING RULES:
+
+您是一个高级推理代理，可以根据对过去任务轨迹的新批评，从现有规则集中添加、编辑或删除规则。您将获得…
+之前的两次任务试验，您…
+（任务描述）…
+一个成功一个
+试验不成功。你试验失败是因为…
+【任务失败原因】。
+这是之前的两个
+比较试验
+和
+评论：
+[失败/成功的轨迹]
+B
+在您成功的任务试验中…
+（任务描述].
+以下是试验：
+[成功的轨迹]
+以下是现有规则：
+[现有见解]通过检查…
+与成功的试验相比，…
+成功试用，…
+和现有规则的列表，您可以执行以下操作：添加、编辑、否决或赞成，以便新规则是通用和高级…
+对失败审判的批评…
+成功试验的见解…
+或者提出的思维方式，这样它们就可以被使用…
+为了避免类似的失败，当作为对不同的有用提示时
+遇到
+未来有不同的任务。
+未来的问题。
+强调…
+批评如何…
+帮助代理的提示…
+执行更好的思想和行动。
+遵循以下格式：
+😍操作><规则编号>：<规则>
+可用的操作有：UPVOTE（如果现有规则与任务高度相关）、DOWNVOTE（如果一个现有规则与其他现有规则相矛盾或相似/重复）、EDIT（如果任何现有规则不够通用或可以增强、重写和改进）、ADD（添加与现有规则非常不同并与其他任务相关的新规则）。每个都需要密切遵循以下相应的格式：
+UPVOTE<EXISTING RULE NUMBER>：<EXISTING RULE>DOWNVOTE<EXISTING RULE NUMBER>：<EXISTING RULE>EDIT<EXISTING RULE NUMBER>：<新修改规则>添加<新规则号>："新规则>
+不要在规则中提及试验，因为所有规则都应该是通用的。每个规则都应该简洁易懂。任何操作都可以使用多次。
+最多执行4次操作，每个现有规则最多只能执行1次操作。以下是您对上述现有规则列表执行的操作：

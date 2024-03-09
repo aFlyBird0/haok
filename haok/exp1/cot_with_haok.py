@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     samples = filter_samples(all_samples, sample_length)
 
-    res_file_prefix = f"result/exp1/cot_with_haok_gpt3/{task}"
+    res_file_prefix = f"result/exp1/cot_with_haok/{task}"
     all_file = f"{res_file_prefix}.jsonl"
     error_file = f"{res_file_prefix}_error.jsonl"
 

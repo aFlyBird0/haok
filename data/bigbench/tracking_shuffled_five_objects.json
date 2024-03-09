@@ -17,7 +17,7 @@
     "example_output_prefix": "",
     "append_choices_to_input": false,
     "choice_prefix": "",
-    "task_prefix":"",
+    "task_prefix":"Just give me the final answer, like \"pink ball.\"",
     "few_shot_example_separator": "\n\n\n",
     "examples": [
         {

@@ -34,6 +34,18 @@ class OpenAIConfig:
         )
 
     @staticmethod
+    def openai4():
+        # os.environ["OPENAI_API_KEY"] = OpenAIConfig.openai_api_key
+        return ChatOpenAI(
+            # model_name="gpt-3.5-turbo-1106",
+            model_name="gpt-4-0125-preview",
+            # model_name="gpt-3.5-turbo",
+            openai_api_key=openai_api_key,
+            openai_api_base=openai_api_base,
+            temperature=0,
+        )
+
+    @staticmethod
     def openai_with_params(model: str=default_model, temperature: float=0.0):
         return ChatOpenAI(
             model_name=model,
