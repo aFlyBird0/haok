@@ -1,0 +1,31 @@
+You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.
+Your task is to: examine the alarmclock with the desklamp.
+Act 1: think: To solve the task, I need to find and take an alarmclock, then find and use a desklamp. First I need to find an alarmclock. An alarmclock is more likely to appear in desk (1-2), shelf (1-6), drawer (1-6), bed (1), garbagecan (1), safe (1). I can check one by one, starting with desk 1.
+Obs 1: OK.
+Act 2: go to desk 1
+Obs 2: On the desk 1, you see a bowl 1, a desklamp 1, a mug 1, and a pencil 1.
+Act 3: think: I didn't find an alarmclock on desk 1. I should check another location. Next, I will check desk 2.
+Obs 3: OK.
+Act 4: go to desk 2
+Obs 4: On the desk 2, you see a alarmclock 1.
+Act 5: think: Now I find an alarmclock (1). Next, I need to take it.
+Obs 5: OK.
+Act 6: take alarmclock 1 from desk 2
+Obs 6: You pick up the alarmclock 1 from the desk 2.
+Act 7: think: Now I take an alarmclock (1). Next, I need to find a desklamp. A desklamp is more likely to appear in desk (1-2), shelf (1-6), drawer (1-6), bed (1), garbagecan (1), safe (1). I can check one by one, starting with desk 1.
+Obs 7: OK.
+Act 8: go to desk 1
+Obs 8: On the desk 1, you see a bowl 1, a desklamp 1, a mug 1, and a pencil 1.
+Act 9: go to desk 2
+Obs 9: On the desk 2, you see nothing.
+Act 10: go to shelf 1
+Obs 10: On the shelf 1, you see a keychain 3, and a pen 3.
+Act 11: go to shelf 2
+Obs 11: On the shelf 2, you see nothing.
+Act 12: go to shelf 3
+Obs 12: On the shelf 3, you see a bowl 1, and a desklamp 1.
+Act 13: think: Now I find a desklamp (1). Next, I need to use it.
+Obs 13: OK.
+Act 14: use desklamp 1
+Obs 14: You turn on the desklamp 1.
+Result: Task Success!

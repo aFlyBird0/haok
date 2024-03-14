@@ -3,6 +3,7 @@ from typing import List
 from bson import ObjectId
 
 from haok.action_to_module.module_define import example_fibonacci
+from haok.exp2.plan_extract_agent import convert_json_to_string
 from haok.module.module import Module, Param
 from haok.database.mongo import default_db
 from haok.config.config import Database
@@ -76,34 +77,39 @@ default_plan_store = PlanStore()
 
 
 if __name__ == '__main__':
-    p = PlanStore()
-    plans = [
-  {
-    "task": "find and take a tomato",
-    "steps": [
-      "go to countertop 1",
-      "take tomato 1 from countertop 1"
-    ]
-  },
-  {
-    "task": "cool the tomato with the fridge",
-    "steps": [
-      "go to fridge 1",
-      "cool tomato 1 with fridge 1"
-    ]
-  },
-  {
-    "task": "put the tomato in the microwave",
-    "steps": [
-      "go to microwave 1",
-      "open microwave 1",
-      "put tomato 1 in/on microwave 1"
-    ]
-  }
-]
-    ids = p.add_batch(plans)
+#     p = PlanStore()
+#     plans = [
+#   {
+#     "task": "find and take a tomato",
+#     "steps": [
+#       "go to countertop 1",
+#       "take tomato 1 from countertop 1"
+#     ]
+#   },
+#   {
+#     "task": "cool the tomato with the fridge",
+#     "steps": [
+#       "go to fridge 1",
+#       "cool tomato 1 with fridge 1"
+#     ]
+#   },
+#   {
+#     "task": "put the tomato in the microwave",
+#     "steps": [
+#       "go to microwave 1",
+#       "open microwave 1",
+#       "put tomato 1 in/on microwave 1"
+#     ]
+#   }
+# ]
+#     ids = p.add_batch(plans)
+#
+#     print(ids)
+#
+#     for plan in p.list():
+#         print(plan)
 
-    print(ids)
+    p = default_plan_store
 
-    for plan in p.list():
-        print(plan)
+    print(p.find_similar_module("put a clean tomato in countertop."))
+    print(convert_json_to_string(default_plan_store.find_similar_module(task="put a clean plate in countertop.")))

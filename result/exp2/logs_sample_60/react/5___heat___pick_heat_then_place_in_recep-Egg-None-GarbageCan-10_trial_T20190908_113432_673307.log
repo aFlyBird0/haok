@@ -1,0 +1,31 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some egg and put it in garbagecan.
+Act 1: think: To solve the task, I need to find and take an egg, then heat it with the microwave, and finally put it in the garbage can.
+Obs 1: OK.
+Act 2: think: First, I need to find an egg. An egg is more likely to appear in the fridge (1), countertop (1-3), dining table (1), stove burner (1-4), toaster (1), garbage can (1), or cabinet (1-6). I can start by checking the fridge (1).
+Obs 2: OK.
+Act 3: open fridge 1
+Obs 3: Nothing happens.
+Act 4: go to countertop 1
+Obs 4: On the countertop 1, you see a creditcard 1, and a peppershaker 1.
+Act 5: go to countertop 2
+Obs 5: On the countertop 2, you see a bread 1, a knife 1, a lettuce 2, a papertowelroll 1, a soapbottle 1, a spoon 2, and a vase 1.
+Act 6: go to countertop 3
+Obs 6: On the countertop 3, you see a butterknife 3, a butterknife 2, a butterknife 1, a cellphone 1, a cup 2, a egg 1, a fork 1, a houseplant 1, a lettuce 3, a plate 2, a plate 1, a potato 1, a tomato 2, and a vase 3.
+Act 7: think: Now I found an egg (1). Next, I need to take it.
+Obs 7: OK.
+Act 8: take egg 1 from countertop 3
+Obs 8: You pick up the egg 1 from the countertop 3.
+Act 9: think: Now I have the egg (1). Next, I need to go to the microwave (1) and heat it.
+Obs 9: OK.
+Act 10: go to microwave 1
+Obs 10: The microwave 1 is closed.
+Act 11: heat egg 1 with microwave 1
+Obs 11: You heat the egg 1 using the microwave 1.
+Act 12: think: Now I have heated the egg (1). Next, I need to put it in the garbage can (1).
+Obs 12: OK.
+Act 13: go to garbagecan 1
+Obs 13: On the garbagecan 1, you see a soapbottle 2, and a tomato 3.
+Act 14: put egg 1 in/on garbagecan 1
+Obs 14: You put the egg 1 in/on the garbagecan 1.
+Result: Task Success!

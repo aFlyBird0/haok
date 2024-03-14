@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.
+Your task is to: clean some cloth and put it in cabinet.
+Act 1: think: To solve the task, I need to find and take a cloth, then clean it with sinkbasin, then put it in cabinet.
+Obs 1: OK.
+Act 2: think: First I need to find a cloth. A cloth is more likely to appear in cabinet (1-4), countertop (1), handtowelholder (1-2), sinkbasin (1-2), garbagecan (1). I can check one by one, starting with cabinet 1.
+Obs 2: OK.
+Act 3: go to cabinet 1
+Obs 3: The cabinet 1 is closed.
+Act 4: open cabinet 1
+Obs 4: You open the cabinet 1. The cabinet 1 is open. In it, you see a toiletpaper 1.
+Act 5: go to cabinet 2
+Obs 5: The cabinet 2 is closed.
+Act 6: open cabinet 2
+Obs 6: You open the cabinet 2. The cabinet 2 is open. In it, you see a cloth 1.
+Act 7: take cloth 1 from cabinet 2
+Obs 7: You pick up the cloth 1 from the cabinet 2.
+Act 8: think: Now I take a cloth (1). Next, I need to go to sinkbasin (1) and clean it.
+Obs 8: OK.
+Act 9: go to sinkbasin 1
+Obs 9: On the sinkbasin 1, you see nothing.
+Act 10: think: I need to find water to clean the cloth. Water is more likely to appear in sinkbasin (1-2), toilet (1). I can check one by one, starting with sinkbasin 1.
+Obs 10: OK.
+Act 11: go to sinkbasin 1
+Obs 11: Nothing happens.
+Act 12: open sinkbasin 1
+Obs 12: Nothing happens.
+Act 13: fill sinkbasin 1 with water
+Obs 13: Nothing happens.
+Act 14: think: I need to find water to clean the cloth. Water is more likely to appear in sinkbasin (1-2), toilet (1). I can check one by one, starting with sinkbasin 2.
+Obs 14: OK.
+Act 15: go to sinkbasin 2
+Obs 15: On the sinkbasin 2, you see nothing.
+Act 16: think: I need to find water to clean the cloth. Water is more likely to appear in sinkbasin (1-2), toilet (1). I can check one by one, starting with toilet 1.
+Obs 16: OK.
+Act 17: go to toilet 1
+Obs 17: On the toilet 1, you see a toiletpaper 3.
+Act 18: think: I can't find water in the toilet. I need to find another source of water to clean the cloth. Water is more likely to appear in sinkbasin (1-2). I can check one by one, starting with sinkbasin 1.
+Obs 18: OK.
+Act 19: go to sinkbasin 1
+Obs 19: On the sinkbasin 1, you see nothing.
+Act 20: fill sinkbasin 1 with water
+Obs 20: Nothing happens.
+Act 21: think: I still can't find water in the sinkbasin. I need to find another source of water to clean the cloth. Water is more likely to appear in sinkbasin (1-2). I can check one by one, starting with sinkbasin 2.
+Obs 21: OK.
+Act 22: go to sinkbasin 2
+Obs 22: On the sinkbasin 2, you see nothing.
+Act 23: fill sinkbasin 2 with water
+Obs 23: Nothing happens.
+Act 24: think: I can't find water in the sinkbasin either. I need to find another source of water to clean the cloth. Water is more likely to appear in sinkbasin (1-2). I can check one by one, starting with sinkbasin 1.
+Obs 24: OK.
+Act 25: go to sinkbasin 1
+Obs 25: On the sinkbasin 1, you see nothing.
+Act 26: fill sinkbasin 1 with water
+Obs 26: Nothing happens.
+Act 27: think: I still can't find water in the sinkbasin. I need to find another source of water to clean the cloth. Water is more likely to appear in sinkbasin (1-2). I can check one by one, starting with sinkbasin 2.
+Obs 27: OK.
+Act 28: go to sinkbasin 2
+Obs 28: On the sinkbasin 2, you see nothing.
+Act 29: fill sinkbasin 2 with water
+Obs 29: Nothing happens.
+Act 30: think: I can't find water in the sinkbasin either. I need to find another source of water to clean the cloth. Water is more likely to appear in sinkbasin (1-2). I can check one by one, starting with sinkbasin 1.
+Obs 30: OK.

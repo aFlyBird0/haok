@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a armchair 1, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a safe 1, a shelf 12, a shelf 11, a shelf 10, a shelf 9, a shelf 8, a shelf 7, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, a shelf 1, a sidetable 1, and a sofa 1.
+Your task is to: put some watch on safe.
+Act 1: think: To solve the task, I need to find and take a watch, then put it on the safe.
+Obs 1: OK.
+Act 2: think: First I need to find a watch. A watch is more likely to appear in a drawer (1-5), a shelf (1-12), a cabinet (1-4), a dresser (1), a sidetable (1), or a sofa (1). I can start by checking the drawers, starting with drawer 1.
+Obs 2: OK.
+Act 3: go to drawer 1
+Obs 3: The drawer 1 is closed.
+Act 4: open drawer 1
+Obs 4: You open the drawer 1. The drawer 1 is open. In it, you see a watch 1.
+Act 5: think: Now I found a watch (1). Next, I need to take it.
+Obs 5: OK.
+Act 6: take watch 1 from drawer 1
+Obs 6: You pick up the watch 1 from the drawer 1.
+Act 7: think: Now I have the watch (1). Next, I need to put it on the safe.
+Obs 7: OK.
+Act 8: go to safe 1
+Obs 8: The safe 1 is closed.
+Act 9: open safe 1
+Obs 9: You open the safe 1. The safe 1 is open. In it, you see a vase 3, and a vase 2.
+Act 10: put watch 1 on safe 1
+Obs 10: Nothing happens.
+Act 11: think: It seems like the safe is already full with vases. I need to find another place to put the watch. I can try putting it on the dresser 1.
+Obs 11: OK.
+Act 12: go to dresser 1
+Obs 12: On the dresser 1, you see a box 1, a cellphone 2, a cellphone 1, a keychain 1, a laptop 1, a newspaper 1, and a watch 3.
+Act 13: put watch 1 on dresser 1
+Obs 13: Nothing happens.
+Act 14: think: The dresser is also full. I need to find another place to put the watch. I can try putting it on the shelf 1.
+Obs 14: OK.
+Act 15: go to shelf 1
+Obs 15: On the shelf 1, you see nothing.
+Act 16: put watch 1 on shelf 1
+Obs 16: Nothing happens.
+Act 17: think: It seems like the shelf is not a suitable place for the watch either. I can try putting it on the sidetable 1.
+Obs 17: OK.
+Act 18: go to sidetable 1
+Obs 18: On the sidetable 1, you see a tissuebox 1, and a vase 1.
+Act 19: put watch 1 on sidetable 1
+Obs 19: Nothing happens.
+Act 20: think: It looks like the sidetable is not the right place either. I can try putting the watch on the armchair 1.
+Obs 20: OK.
+Act 21: go to armchair 1
+Obs 21: On the armchair 1, you see a box 3, a pillow 1, and a remotecontrol 1.
+Act 22: put watch 1 on armchair 1
+Obs 22: Nothing happens.
+Act 23: think: It seems like none of the furniture in this room is suitable for the watch. I may need to look for another location or find a way to make space on the safe. I can try putting the watch on the sofa 1.
+Obs 23: OK.
+Act 24: go to sofa 1
+Obs 24: On the sofa 1, you see a newspaper 2.
+Act 25: put watch 1 on sofa 1
+Obs 25: Nothing happens.
+Act 26: think: It seems like the sofa is not a suitable place either. I need to find a way to make space on the safe. I can try removing one of the vases from the safe to make room for the watch.
+Obs 26: OK.
+Act 27: go to safe 1
+Obs 27: The safe 1 is open. In it, you see a vase 3, and a vase 2.
+Act 28: remove vase 3 from safe 1
+Obs 28: Nothing happens.
+Act 29: think: It looks like I can't remove the vases from the safe. I may need to find another location for the watch. I can try putting it on the shelf 2.
+Obs 29: OK.
+Act 30: go to shelf 2
+Obs 30: On the shelf 2, you see nothing.

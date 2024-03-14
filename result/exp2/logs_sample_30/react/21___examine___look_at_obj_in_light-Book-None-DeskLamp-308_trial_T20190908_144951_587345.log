@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.
+Your task is to: examine the book with the desklamp.
+Act 1: think: To solve the task, I need to find and take a book, then find and use a desklamp. First I need to find a book. A book is more likely to appear in drawer (1-6), shelf (1-6), desk (1-2), bed (1), garbagecan (1), laundryhamper (1), safe (1). I can check one by one, starting with drawer 1.
+Obs 1: OK.
+Act 2: go to drawer 1
+Obs 2: The drawer 1 is closed.
+Act 3: open drawer 1
+Obs 3: You open the drawer 1. The drawer 1 is open. In it, you see a keychain 2.
+Act 4: think: I didn't find a book in drawer 1. I should check the other drawers. Next, I will go to drawer 2.
+Obs 4: OK.
+Act 5: go to drawer 2
+Obs 5: On the drawer 2, you see nothing.
+Act 6: go to drawer 3
+Obs 6: Nothing happens.
+Act 7: go to drawer 4
+Obs 7: The drawer 4 is closed.
+Act 8: open drawer 4
+Obs 8: You open the drawer 4. The drawer 4 is open. In it, you see nothing.
+Act 9: go to drawer 5
+Obs 9: On the drawer 5, you see nothing.
+Act 10: go to drawer 6
+Obs 10: The drawer 6 is closed.
+Act 11: open drawer 6
+Obs 11: You open the drawer 6. The drawer 6 is open. In it, you see a cd 3.
+Act 12: think: I didn't find a book in drawer 6. Next, I will check the shelves. I will start with shelf 1.
+Obs 12: OK.
+Act 13: go to shelf 1
+Obs 13: On the shelf 1, you see a bowl 1.
+Act 14: think: I didn't find a book on shelf 1. Next, I will check the other shelves. I will go to shelf 2.
+Obs 14: OK.
+Act 15: go to shelf 2
+Obs 15: On the shelf 2, you see a pen 1.
+Act 16: think: I didn't find a book on shelf 2. Next, I will check the other shelves. I will go to shelf 3.
+Obs 16: OK.
+Act 17: go to shelf 3
+Obs 17: On the shelf 3, you see a creditcard 1, a desklamp 1, and a mug 1.
+Act 18: think: I found a desklamp (1) on shelf 3. Next, I need to find a book. A book is more likely to appear in drawer (1-6), shelf (1-6), desk (1-2), bed (1), garbagecan (1), laundryhamper (1), safe (1). I can check one by one, starting with drawer 1.
+Obs 18: OK.
+Act 19: go to drawer 1
+Obs 19: The drawer 1 is open. In it, you see a keychain 2.
+Act 20: think: I didn't find a book in drawer 1. Next, I will go to drawer 2.
+Obs 20: OK.
+Act 21: go to drawer 2
+Obs 21: On the drawer 2, you see nothing.
+Act 22: go to drawer 3
+Obs 22: Nothing happens.
+Act 23: go to drawer 4
+Obs 23: The drawer 4 is open. In it, you see nothing.
+Act 24: go to drawer 5
+Obs 24: On the drawer 5, you see nothing.
+Act 25: go to drawer 6
+Obs 25: The drawer 6 is open. In it, you see a cd 3.
+Act 26: think: I didn't find a book in drawer 6. Next, I will check the desks. I will start with desk 1.
+Obs 26: OK.
+Act 27: go to desk 1
+Obs 27: On the desk 1, you see a alarmclock 1, a creditcard 1, a desklamp 1, a laptop 3, and a mug 1.
+Act 28: think: I found a desklamp (1) on desk 1. Next, I need to find a book. A book is more likely to appear in drawer (1-6), shelf (1-6), desk (1-2), bed (1), garbagecan (1), laundryhamper (1), safe (1). I can check one by one, starting with desk 2.
+Obs 28: OK.
+Act 29: go to desk 2
+Obs 29: On the desk 2, you see a cellphone 2, a creditcard 2, a mug 3, and a pencil 2.
+Act 30: think: I didn't find a book on desk 2. Next, I will check the bed.
+Obs 30: OK.

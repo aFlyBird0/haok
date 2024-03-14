@@ -22,6 +22,7 @@ def plan_extract_agent(log):
 )
     output_parser = JsonOutputParser()
     llm = OpenAIConfig.openai4()
+    # llm = OpenAIConfig.defaultLLM()
     llm.bind(response_format={"type": "json_object"})
     chain = (
             {"input": RunnablePassthrough()}

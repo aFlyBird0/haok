@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a armchair 1, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a safe 1, a shelf 12, a shelf 11, a shelf 10, a shelf 9, a shelf 8, a shelf 7, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, a shelf 1, a sidetable 1, and a sofa 1.
+Your task is to: put two pillow in sofa.
+Act 1: go to shelf 1
+Obs 1: On the shelf 1, you see nothing.
+Act 2: go to shelf 2
+Obs 2: On the shelf 2, you see nothing.
+Act 3: go to shelf 3
+Obs 3: Nothing happens.
+Act 4: go to shelf 4
+Obs 4: On the shelf 4, you see nothing.
+Act 5: go to shelf 5
+Obs 5: On the shelf 5, you see nothing.
+Act 6: go to shelf 6
+Obs 6: On the shelf 6, you see a statue 3.
+Act 7: take statue 3 from shelf 6
+Obs 7: You pick up the statue 3 from the shelf 6.
+Act 8: think: The pillow is not on the shelves. I should check the other furniture in the room.
+Obs 8: OK.
+Act 9: go to cabinet 1
+Obs 9: The cabinet 1 is closed.
+Act 10: open cabinet 1
+Obs 10: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.
+Act 11: go to cabinet 2
+Obs 11: Nothing happens.
+Act 12: go to cabinet 3
+Obs 12: The cabinet 3 is closed.
+Act 13: open cabinet 3
+Obs 13: You open the cabinet 3. The cabinet 3 is open. In it, you see a newspaper 1.
+Act 14: go to cabinet 4
+Obs 14: Nothing happens.
+Act 15: go to drawer 1
+Obs 15: The drawer 1 is closed.
+Act 16: open drawer 1
+Obs 16: You open the drawer 1. The drawer 1 is open. In it, you see nothing.
+Act 17: go to drawer 2
+Obs 17: The drawer 2 is closed.
+Act 18: open drawer 2
+Obs 18: You open the drawer 2. The drawer 2 is open. In it, you see nothing.
+Act 19: go to drawer 3
+Obs 19: The drawer 3 is closed.
+Act 20: open drawer 3
+Obs 20: You open the drawer 3. The drawer 3 is open. In it, you see nothing.
+Act 21: go to drawer 4
+Obs 21: The drawer 4 is closed.
+Act 22: open drawer 4
+Obs 22: You open the drawer 4. The drawer 4 is open. In it, you see nothing.
+Act 23: go to drawer 5
+Obs 23: The drawer 5 is closed.
+Act 24: open drawer 5
+Obs 24: You open the drawer 5. The drawer 5 is open. In it, you see nothing.
+Act 25: go to dresser 1
+Obs 25: On the dresser 1, you see a box 2, a cellphone 1, a creditcard 1, a laptop 1, a remotecontrol 3, a remotecontrol 2, and a statue 1.
+Act 26: take pillow 1 from dresser 1
+Obs 26: Nothing happens.
+Act 27: think: The pillow is not in the dresser. I should check the other furniture in the room.
+Obs 27: OK.
+Act 28: go to garbagecan 1
+Obs 28: On the garbagecan 1, you see nothing.
+Act 29: go to safe 1
+Obs 29: The safe 1 is closed.
+Act 30: open safe 1
+Obs 30: You open the safe 1. The safe 1 is open. In it, you see a statue 2, and a vase 1.

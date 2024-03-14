@@ -152,7 +152,7 @@ def extract_task_from_ob(s):
 
 
 # for _ in range(134):
-for _ in range(30):
+for _ in range(60):
     # 跳过已经存在的行数
     if exisit_res_lines > 0:
         exisit_res_lines -= 1

@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: clean some pan and put it in countertop.
+Act 1: think: To solve the task, I need to find and take a pan, then clean it with sinkbasin, then put it in countertop.
+Obs 1: OK.
+Act 2: think: First I need to find a pan. A pan is more likely to appear in fridge (1), countertop (1-3), sinkbasin (1), stoveburner (1-4), cabinet (1-6). I can check one by one, starting with fridge 1.
+Obs 2: OK.
+Act 3: go to fridge 1
+Obs 3: The fridge 1 is closed.
+Act 4: open fridge 1
+Obs 4: You open the fridge 1. The fridge 1 is open. In it, you see a apple 2, a apple 1, a bowl 2, a bowl 1, a cup 2, a cup 1, a lettuce 1, a mug 2, a mug 1, a plate 2, and a potato 2.
+Act 5: go to countertop 1
+Obs 5: On the countertop 1, you see nothing.
+Act 6: go to countertop 2
+Obs 6: On the countertop 2, you see nothing.
+Act 7: go to countertop 3
+Obs 7: On the countertop 3, you see a bread 2, a bread 1, a butterknife 2, a butterknife 1, a dishsponge 2, a houseplant 1, a knife 2, a knife 1, a plate 3, a spatula 3, a spatula 2, a spoon 3, a spoon 2, a statue 1, and a tomato 1.
+Act 8: think: Now I find a pan. Next, I need to take it.
+Obs 8: OK.
+Act 9: take pan 3 from countertop 3
+Obs 9: Nothing happens.
+Act 10: think: It seems there is no pan on countertop 3. I should check other locations.
+Obs 10: OK.
+Act 11: go to countertop 2
+Obs 11: On the countertop 2, you see nothing.
+Act 12: go to countertop 1
+Obs 12: On the countertop 1, you see nothing.
+Act 13: go to sinkbasin 1
+Obs 13: On the sinkbasin 1, you see nothing.
+Act 14: go to stoveburner 1
+Obs 14: On the stoveburner 1, you see a pot 1.
+Act 15: think: I found a pot on stoveburner 1, but I need a pan. I should check other locations.
+Obs 15: OK.
+Act 16: go to stoveburner 2
+Obs 16: On the stoveburner 2, you see a pan 1.
+Act 17: take pan 1 from stoveburner 2
+Obs 17: You pick up the pan 1 from the stoveburner 2.
+Act 18: think: Now I take a pan (1). Next, I need to go to sinkbasin (1) and clean it.
+Obs 18: OK.
+Act 19: go to sinkbasin 1
+Obs 19: On the sinkbasin 1, you see nothing.
+Act 20: think: It seems there is no sinkbasin 1. I should check other locations.
+Obs 20: OK.
+Act 21: go to fridge 1
+Obs 21: The fridge 1 is open. In it, you see a apple 2, a apple 1, a bowl 2, a bowl 1, a cup 2, a cup 1, a lettuce 1, a mug 2, a mug 1, a plate 2, and a potato 2.
+Act 22: think: I can clean the pan in the sinkbasin, but I need to find it first. I should check other locations.
+Obs 22: OK.
+Act 23: go to cabinet 1
+Obs 23: On the cabinet 1, you see a plate 1, and a vase 1.
+Act 24: go to cabinet 2
+Obs 24: The cabinet 2 is closed.
+Act 25: open cabinet 2
+Obs 25: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing.
+Act 26: go to cabinet 3
+Obs 26: On the cabinet 3, you see a peppershaker 1, and a soapbottle 1.
+Act 27: go to cabinet 4
+Obs 27: On the cabinet 4, you see nothing.
+Act 28: go to cabinet 5
+Obs 28: The cabinet 5 is closed.
+Act 29: open cabinet 5
+Obs 29: You open the cabinet 5. The cabinet 5 is open. In it, you see a peppershaker 2.
+Act 30: take pan 1 to sinkbasin 1
+Obs 30: Nothing happens.

@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a armchair 1, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a safe 1, a shelf 12, a shelf 11, a shelf 10, a shelf 9, a shelf 8, a shelf 7, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, a shelf 1, a sidetable 1, and a sofa 1.
+Your task is to: put two pillow in sofa.
+Act 1: think: To solve the task, I need to find and take the first pillow, then put it in sofa, then find and take the second pillow, then put it in sofa.
+Obs 1: OK.
+Act 2: think: First I need to find the first pillow. A pillow is more likely to appear in cabinet (1-4), drawer (1-5), dresser (1), shelf (1-12), sidetable (1), sofa (1). I can check one by one, starting with cabinet 1.
+Obs 2: OK.
+Act 3: go to cabinet 1
+Obs 3: The cabinet 1 is closed.
+Act 4: open cabinet 1
+Obs 4: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing.
+Act 5: go to cabinet 2
+Obs 5: Nothing happens.
+Act 6: go to cabinet 3
+Obs 6: The cabinet 3 is closed.
+Act 7: open cabinet 3
+Obs 7: You open the cabinet 3. The cabinet 3 is open. In it, you see a newspaper 1.
+Act 8: go to cabinet 4
+Obs 8: Nothing happens.
+Act 9: go to drawer 1
+Obs 9: The drawer 1 is closed.
+Act 10: open drawer 1
+Obs 10: You open the drawer 1. The drawer 1 is open. In it, you see nothing.
+Act 11: go to drawer 2
+Obs 11: The drawer 2 is closed.
+Act 12: open drawer 2
+Obs 12: You open the drawer 2. The drawer 2 is open. In it, you see nothing.
+Act 13: go to drawer 3
+Obs 13: The drawer 3 is closed.
+Act 14: open drawer 3
+Obs 14: You open the drawer 3. The drawer 3 is open. In it, you see nothing.
+Act 15: go to drawer 4
+Obs 15: The drawer 4 is closed.
+Act 16: open drawer 4
+Obs 16: You open the drawer 4. The drawer 4 is open. In it, you see nothing.
+Act 17: go to drawer 5
+Obs 17: The drawer 5 is closed.
+Act 18: open drawer 5
+Obs 18: You open the drawer 5. The drawer 5 is open. In it, you see nothing.
+Act 19: go to dresser 1
+Obs 19: On the dresser 1, you see a box 2, a cellphone 1, a creditcard 1, a laptop 1, a remotecontrol 3, a remotecontrol 2, and a statue 1.
+Act 20: think: I haven't found any pillows in the cabinets or drawers. I should check the shelves next.
+Obs 20: OK.
+Act 21: go to shelf 1
+Obs 21: On the shelf 1, you see nothing.
+Act 22: go to shelf 2
+Obs 22: On the shelf 2, you see nothing.
+Act 23: go to shelf 3
+Obs 23: Nothing happens.
+Act 24: go to shelf 4
+Obs 24: On the shelf 4, you see nothing.
+Act 25: go to shelf 5
+Obs 25: On the shelf 5, you see nothing.
+Act 26: go to shelf 6
+Obs 26: On the shelf 6, you see a statue 3.
+Act 27: think: I haven't found any pillows on the shelves. I should check the sidetable next.
+Obs 27: OK.
+Act 28: go to sidetable 1
+Obs 28: On the sidetable 1, you see a remotecontrol 1, and a watch 1.
+Act 29: think: I haven't found any pillows on the sidetable. I should check the sofa next.
+Obs 29: OK.
+Act 30: go to sofa 1
+Obs 30: On the sofa 1, you see a newspaper 3.

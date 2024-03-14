@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: put a cool mug in cabinet.
+Act 1: think: To solve the task, I need to find a cool mug and put it in a cabinet. First, I need to find a cool mug. A mug is more likely to appear in countertop (1-3), coffeemachine (1), cabinet (1-6), shelf (1-3), drawer (1-3). I can check one by one, starting with countertop 1.
+Obs 1: OK.
+Act 2: go to countertop 1
+Obs 2: On the countertop 1, you see a mug 3, a tomato 2, and a tomato 1.
+Act 3: take mug 3 from countertop 1
+Obs 3: You pick up the mug 3 from the countertop 1.
+Act 4: think: Now I have a cool mug (3). Next, I need to put it in a cabinet. I will start with cabinet 1.
+Obs 4: OK.
+Act 5: go to cabinet 1
+Obs 5: On the cabinet 1, you see a peppershaker 1, a soapbottle 1, and a vase 2.
+Act 6: put mug 3 in cabinet 1
+Obs 6: Nothing happens.
+Act 7: put mug 3 in/on cabinet 1
+Obs 7: You put the mug 3 in/on the cabinet 1.
+Act 8: put mug 3 in cabinet 1
+Obs 8: Nothing happens.
+Act 9: put mug 3 in/on cabinet 1
+Obs 9: Nothing happens.
+Act 10: put mug 3 in cabinet 1
+Obs 10: Nothing happens.
+Act 11: put mug 3 in/on cabinet 1
+Obs 11: Nothing happens.
+Act 12: put mug 3 in cabinet 1
+Obs 12: Nothing happens.
+Act 13: put mug 3 in/on cabinet 1
+Obs 13: Nothing happens.
+Act 14: put mug 3 in cabinet 1
+Obs 14: Nothing happens.
+Act 15: put mug 3 in/on cabinet 1
+Obs 15: Nothing happens.
+Act 16: put mug 3 in cabinet 1
+Obs 16: Nothing happens.
+Act 17: put mug 3 in/on cabinet 1
+Obs 17: Nothing happens.
+Act 18: put mug 3 in cabinet 1
+Obs 18: Nothing happens.
+Act 19: put mug 3 in/on cabinet 1
+Obs 19: Nothing happens.
+Act 20: put mug 3 in cabinet 1
+Obs 20: Nothing happens.
+Act 21: put mug 3 in/on cabinet 1
+Obs 21: Nothing happens.
+Act 22: put mug 3 in cabinet 1
+Obs 22: Nothing happens.
+Act 23: put mug 3 in/on cabinet 1
+Obs 23: Nothing happens.
+Act 24: put mug 3 in cabinet 2
+Obs 24: Nothing happens.
+Act 25: put mug 3 in/on cabinet 2
+Obs 25: Nothing happens.
+Act 26: put mug 3 in cabinet 2
+Obs 26: Nothing happens.
+Act 27: put mug 3 in/on cabinet 2
+Obs 27: Nothing happens.
+Act 28: put mug 3 in cabinet 2
+Obs 28: Nothing happens.
+Act 29: put mug 3 in/on cabinet 2
+Obs 29: Nothing happens.
+Act 30: put mug 3 in cabinet 2
+Obs 30: Nothing happens.

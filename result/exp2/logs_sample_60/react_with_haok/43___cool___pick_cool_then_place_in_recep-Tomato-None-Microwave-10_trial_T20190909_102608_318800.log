@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: put a cool tomato in microwave.
+Act 1: think: To solve the task, I need to find and take a tomato, then cool it with the fridge, and finally put it in the microwave.
+Obs 1: OK.
+Act 2: think: First, I need to find a tomato. A tomato is more likely to appear in countertop (1-3), fridge (1), cabinet (1-6), shelf (1-3), drawer (1-3). I can check one by one, starting with countertop 1.
+Obs 2: OK.
+Act 3: go to countertop 1
+Obs 3: On the countertop 1, you see a mug 1, and a saltshaker 1.
+Act 4: go to countertop 2
+Obs 4: On the countertop 2, you see a butterknife 2, a butterknife 1, a cellphone 1, a glassbottle 1, a knife 1, a lettuce 3, a peppershaker 1, a statue 2, a statue 1, and a vase 1.
+Act 5: go to countertop 3
+Obs 5: On the countertop 3, you see a bread 1, a butterknife 3, a creditcard 2, a houseplant 1, a knife 3, a knife 2, a mug 2, a peppershaker 2, and a spatula 2.
+Act 6: go to fridge 1
+Obs 6: The fridge 1 is closed.
+Act 7: cool tomato 1 with fridge 1
+Obs 7: Nothing happens.
+Act 8: think: I need to open the fridge before I can cool the tomato.
+Obs 8: OK.
+Act 9: go to fridge 1
+Obs 9: Nothing happens.
+Act 10: open fridge 1
+Obs 10: You open the fridge 1. The fridge 1 is open. In it, you see a bowl 2, a bowl 1, a egg 1, a lettuce 2, a lettuce 1, a potato 2, and a potato 1.
+Act 11: take tomato 1 from fridge 1
+Obs 11: Nothing happens.
+Act 12: think: I need to find a tomato in the fridge before I can take it.
+Obs 12: OK.
+Act 13: look for tomato in fridge 1
+Obs 13: Nothing happens.
+Act 14: think: I need to check the other locations to find a tomato. I will try looking in the countertop, cabinet, shelf, and drawer.
+Obs 14: OK.
+Act 15: go to cabinet 1
+Obs 15: On the cabinet 1, you see a dishsponge 1.
+Act 16: go to cabinet 2
+Obs 16: The cabinet 2 is closed.
+Act 17: open cabinet 2
+Obs 17: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing.
+Act 18: go to cabinet 3
+Obs 18: On the cabinet 3, you see nothing.
+Act 19: go to cabinet 4
+Obs 19: On the cabinet 4, you see a cup 1, and a vase 2.
+Act 20: go to cabinet 5
+Obs 20: The cabinet 5 is closed.
+Act 21: open cabinet 5
+Obs 21: You open the cabinet 5. The cabinet 5 is open. In it, you see nothing.
+Act 22: go to cabinet 6
+Obs 22: The cabinet 6 is closed.
+Act 23: open cabinet 6
+Obs 23: You open the cabinet 6. The cabinet 6 is open. In it, you see a plate 1, and a soapbottle 1.
+Act 24: take tomato 1 from cabinet 6
+Obs 24: Nothing happens.
+Act 25: think: I still haven't found a tomato. Let me check the other locations.
+Obs 25: OK.
+Act 26: go to shelf 1
+Obs 26: On the shelf 1, you see a creditcard 1, and a dishsponge 2.
+Act 27: go to shelf 2
+Obs 27: On the shelf 2, you see a papertowelroll 1, and a vase 3.
+Act 28: go to shelf 3
+Obs 28: On the shelf 3, you see nothing.
+Act 29: go to drawer 1
+Obs 29: The drawer 1 is closed.
+Act 30: open drawer 1
+Obs 30: You open the drawer 1. The drawer 1 is open. In it, you see a cellphone 2.

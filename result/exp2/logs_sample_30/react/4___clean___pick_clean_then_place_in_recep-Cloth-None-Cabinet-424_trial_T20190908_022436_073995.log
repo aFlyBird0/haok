@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.
+Your task is to: clean some cloth and put it in cabinet.
+Act 1: think: To solve the task, I need to find and take a cloth, then clean it with sinkbasin, then put it in the cabinet.
+Obs 1: OK.
+Act 2: think: First I need to find a cloth. A cloth is more likely to appear in countertop (1), handtowelholder (1-2), sinkbasin (1-2), garbagecan (1), towelholder (1). I can check one by one, starting with countertop 1.
+Obs 2: OK.
+Act 3: go to countertop 1
+Obs 3: On the countertop 1, you see a candle 1, a soapbottle 2, a spraybottle 2, and a spraybottle 1.
+Act 4: go to handtowelholder 1
+Obs 4: On the handtowelholder 1, you see a handtowel 1.
+Act 5: take cloth 1 from handtowelholder 1
+Obs 5: Nothing happens.
+Act 6: think: I need to find a cloth in a different location. Next, I will check the sinkbasin 1.
+Obs 6: OK.
+Act 7: go to sinkbasin 1
+Obs 7: On the sinkbasin 1, you see nothing.
+Act 8: go to sinkbasin 2
+Obs 8: On the sinkbasin 2, you see nothing.
+Act 9: go to garbagecan 1
+Obs 9: On the garbagecan 1, you see a soapbar 1.
+Act 10: think: I didn't find a cloth in the sinkbasin or garbagecan. Next, I will check the towelholder 1.
+Obs 10: OK.
+Act 11: go to towelholder 1
+Obs 11: On the towelholder 1, you see a towel 1.
+Act 12: take cloth 1 from towelholder 1
+Obs 12: Nothing happens.
+Act 13: think: I still haven't found a cloth. Next, I will check the handtowelholder 2.
+Obs 13: OK.
+Act 14: go to handtowelholder 2
+Obs 14: On the handtowelholder 2, you see a handtowel 2.
+Act 15: take cloth 2 from handtowelholder 2
+Obs 15: Nothing happens.
+Act 16: think: I still haven't found a cloth. Next, I will check the cabinet 1.
+Obs 16: OK.
+Act 17: go to cabinet 1
+Obs 17: The cabinet 1 is closed.
+Act 18: open cabinet 1
+Obs 18: You open the cabinet 1. The cabinet 1 is open. In it, you see a toiletpaper 1.
+Act 19: think: I didn't find a cloth in the cabinet 1. Next, I will check the cabinet 2.
+Obs 19: OK.
+Act 20: go to cabinet 2
+Obs 20: The cabinet 2 is closed.
+Act 21: open cabinet 2
+Obs 21: You open the cabinet 2. The cabinet 2 is open. In it, you see a cloth 1.
+Act 22: take cloth 1 from cabinet 2
+Obs 22: You pick up the cloth 1 from the cabinet 2.
+Act 23: think: Now I have found a cloth (1). Next, I need to go to sinkbasin (1) and clean it.
+Obs 23: OK.
+Act 24: go to sinkbasin 1
+Obs 24: On the sinkbasin 1, you see nothing.
+Act 25: go to sinkbasin 2
+Obs 25: On the sinkbasin 2, you see nothing.
+Act 26: think: I need to find a cloth in a different location to clean it. Next, I will check the handtowelholder 2.
+Obs 26: OK.
+Act 27: go to handtowelholder 2
+Obs 27: On the handtowelholder 2, you see a handtowel 2.
+Act 28: take cloth 1 from handtowelholder 2
+Obs 28: Nothing happens.
+Act 29: think: I already have a cloth (1) from the cabinet 2. Next, I need to clean it with the sinkbasin (1).
+Obs 29: OK.
+Act 30: clean cloth 1 with sinkbasin 1
+Obs 30: Nothing happens.

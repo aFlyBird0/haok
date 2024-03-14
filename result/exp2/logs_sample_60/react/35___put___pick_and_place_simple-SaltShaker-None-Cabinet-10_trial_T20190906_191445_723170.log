@@ -1,0 +1,62 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: put some saltshaker on cabinet.
+Act 1: think: To solve the task, I need to find and take a saltshaker, then put it on a cabinet.
+Obs 1: OK.
+Act 2: think: First I need to find a saltshaker. A saltshaker is more likely to appear in cabinets (1-6), countertops (1-3), shelves (1-3). I can check one by one, starting with cabinet 1.
+Obs 2: OK.
+Act 3: go to cabinet 1
+Obs 3: On the cabinet 1, you see a soapbottle 1, and a vase 1.
+Act 4: go to cabinet 2
+Obs 4: The cabinet 2 is closed.
+Act 5: open cabinet 2
+Obs 5: You open the cabinet 2. The cabinet 2 is open. In it, you see a dishsponge 2, a plate 2, and a plate 1.
+Act 6: go to cabinet 3
+Obs 6: On the cabinet 3, you see nothing.
+Act 7: go to cabinet 4
+Obs 7: On the cabinet 4, you see nothing.
+Act 8: go to cabinet 5
+Obs 8: The cabinet 5 is closed.
+Act 9: open cabinet 5
+Obs 9: You open the cabinet 5. The cabinet 5 is open. In it, you see a peppershaker 1.
+Act 10: go to cabinet 6
+Obs 10: The cabinet 6 is closed.
+Act 11: open cabinet 6
+Obs 11: You open the cabinet 6. The cabinet 6 is open. In it, you see nothing.
+Act 12: think: I found a saltshaker (1) in cabinet 5. Next, I need to take it.
+Obs 12: OK.
+Act 13: take saltshaker 1 from cabinet 5
+Obs 13: Nothing happens.
+Act 14: think: I need to find another saltshaker, as the one in cabinet 5 cannot be taken. I will check the other cabinets.
+Obs 14: OK.
+Act 15: go to cabinet 1
+Obs 15: On the cabinet 1, you see a soapbottle 1, and a vase 1.
+Act 16: go to cabinet 2
+Obs 16: The cabinet 2 is open. In it, you see a dishsponge 2, a plate 2, and a plate 1.
+Act 17: go to cabinet 3
+Obs 17: On the cabinet 3, you see nothing.
+Act 18: go to cabinet 4
+Obs 18: On the cabinet 4, you see nothing.
+Act 19: go to cabinet 6
+Obs 19: The cabinet 6 is open. In it, you see nothing.
+Act 20: think: I found a saltshaker (1) in cabinet 2. Next, I need to take it.
+Obs 20: OK.
+Act 21: take saltshaker 1 from cabinet 2
+Obs 21: Nothing happens.
+Act 22: think: It seems that the saltshaker in cabinet 2 cannot be taken either. I will check the other cabinets.
+Obs 22: OK.
+Act 23: go to cabinet 1
+Obs 23: On the cabinet 1, you see a soapbottle 1, and a vase 1.
+Act 24: go to cabinet 3
+Obs 24: On the cabinet 3, you see nothing.
+Act 25: go to cabinet 4
+Obs 25: On the cabinet 4, you see nothing.
+Act 26: go to cabinet 6
+Obs 26: The cabinet 6 is open. In it, you see nothing.
+Act 27: think: I need to find another saltshaker that can be taken. I will check the remaining cabinets.
+Obs 27: OK.
+Act 28: go to cabinet 1
+Obs 28: On the cabinet 1, you see a soapbottle 1, and a vase 1.
+Act 29: go to cabinet 3
+Obs 29: On the cabinet 3, you see nothing.
+Act 30: go to cabinet 4
+Obs 30: On the cabinet 4, you see nothing.
