@@ -124,6 +124,6 @@ def llm_call_cnts_fig_bar(sample=10):
 
 
 if __name__ == '__main__':
-    sample = 60
+    sample = 30
     llm_call_cnts_fig_bar(sample)
     success_rate_fig(sample)

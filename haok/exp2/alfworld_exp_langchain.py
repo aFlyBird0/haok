@@ -1,3 +1,7 @@
+"""
+deprecated
+"""
+
 import os
 import openai
 import yaml

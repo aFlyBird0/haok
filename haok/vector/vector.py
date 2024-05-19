@@ -8,12 +8,11 @@ from haok.config.settings import get_settings
 
 def get_vector_collection(collection_name)->chromadb.Collection:
     persist_dir = '.chromadb'
+    # 这里有个历史遗留，当时没有考虑到 ChatModel 和 EmbeddingModel 可能来自不同供应商
+    # 所以 EmbeddingModel 这里就写死 OpenAI 了
     openai_ef = embedding_functions.OpenAIEmbeddingFunction(
-        # api_base=OpenAIConfig.API_BASE,
-        # api_key=OpenAIConfig.API_KEY,
-        # model_name="text-embedding-ada-002",
-        api_base=get_settings().llm.api_base,
-        api_key=get_settings().llm.api_key,
+        api_base="https://api.nextapi.fun/v1",
+        api_key="ak-nyH5E1ka6oFKqRzxxqAooqcKSGCrk38mMgvU1DTqgOgRyTUQ",
         model_name="text-embedding-3-small",
     )
     client = chromadb.PersistentClient(persist_dir)

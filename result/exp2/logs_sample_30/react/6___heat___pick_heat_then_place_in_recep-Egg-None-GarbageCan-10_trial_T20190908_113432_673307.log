@@ -1,0 +1,37 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some egg and put it in garbagecan.
+Act 1: think: To solve the task, I need to find and take an egg, then heat it with microwave, then put it in garbagecan.
+Obs 1: OK.
+Act 2: think: First I need to find an egg. An egg is more likely to appear in fridge (1), countertop (1-3), diningtable (1), stoveburner (1-4), toaster (1), garbagecan (1), cabinet (1-6). I can check one by one, starting with fridge 1.
+Obs 2: OK.
+Act 3: open fridge 1
+Obs 3: Nothing happens.
+Act 4: go to fridge 1
+Obs 4: The fridge 1 is closed.
+Act 5: open fridge 1
+Obs 5: You open the fridge 1. The fridge 1 is open. In it, you see a apple 2, a apple 1, a bowl 2, a bread 2, a cup 1, a lettuce 1, a mug 1, and a tomato 1.
+Act 6: think: The fridge does not contain an egg. Next, I should check the countertops.
+Obs 6: OK.
+Act 7: go to countertop 1
+Obs 7: On the countertop 1, you see a creditcard 1, and a peppershaker 1.
+Act 8: go to countertop 2
+Obs 8: On the countertop 2, you see a bread 1, a knife 1, a lettuce 2, a papertowelroll 1, a soapbottle 1, a spoon 2, and a vase 1.
+Act 9: go to countertop 3
+Obs 9: On the countertop 3, you see a butterknife 3, a butterknife 2, a butterknife 1, a cellphone 1, a cup 2, a egg 1, a fork 1, a houseplant 1, a lettuce 3, a plate 2, a plate 1, a potato 1, a tomato 2, and a vase 3.
+Act 10: think: Now I find an egg (1) on countertop 3. Next, I need to take it.
+Obs 10: OK.
+Act 11: take egg 1 from countertop 3
+Obs 11: You pick up the egg 1 from the countertop 3.
+Act 12: think: Now I have taken an egg (1). Next, I need to go to a microwave (1) and heat it.
+Obs 12: OK.
+Act 13: go to microwave 1
+Obs 13: The microwave 1 is closed.
+Act 14: heat egg 1 with microwave 1
+Obs 14: You heat the egg 1 using the microwave 1.
+Act 15: think: Now I have heated an egg (1). Next, I need to put it in/on garbagecan 1.
+Obs 15: OK.
+Act 16: go to garbagecan 1
+Obs 16: On the garbagecan 1, you see a soapbottle 2, and a tomato 3.
+Act 17: put egg 1 in/on garbagecan 1
+Obs 17: You put the egg 1 in/on the garbagecan 1.
+Result: Task Success!

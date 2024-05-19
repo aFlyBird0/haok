@@ -9,15 +9,16 @@ class CustomBaseSettings(BaseSettings):
         env_file_encoding = "utf-8"
 
 
-class LLMSettings(CustomBaseSettings):
-    # api_base: str = Field(env="OPENAI_API_BASE", default="https://api.gptapi.cyou/v1")
-    # api_key: str = Field(env="OPENAI_API_KEY", default="sk-MrymAdMULNCmANziD6Bb5e51925047EdBf416377294bE673")
-    # default_model: str = Field(env="DEFAULT_MODEL", default="gpt-3.5-turbo")
-
-    api_base: str = Field(env="OPENAI_API_BASE", default="https://api.nextapi.fun/v1")
-    api_key: str = Field(env="OPENAI_API_KEY", default="ak-rijxawD5sZxxnXXEoJmpWG52QlAMYxxaEQmp1ixrcJQOtbVY")
-    default_model: str = Field(env="DEFAULT_MODEL", default="gpt-3.5-turbo-0125")
+# class LLMSettings(CustomBaseSettings):
+#     api_base: str = Field(env="OPENAI_API_BASE", default="https://api.nextapi.fun/v1")
+#     api_key: str = Field(env="OPENAI_API_KEY", default="ak-nyH5E1ka6oFKqRzxxqAooqcKSGCrk38mMgvU1DTqgOgRyTUQ") # 论文临时用的key
+#     default_model: str = Field(env="DEFAULT_MODEL", default="gpt-3.5-turbo-0125")
     # default_model: str = Field(env="DEFAULT_MODEL", default="gpt-4-0125-preview")
+
+class LLMSettings(CustomBaseSettings):
+    api_base: str = Field(env="OPENAI_API_BASE", default="https://api.deepseek.com/v1")
+    api_key: str = Field(env="OPENAI_API_KEY", default="sk-a0cb33389f42442a917c0dd978d962b2") # 论文临时用的key
+    default_model: str = Field(env="DEFAULT_MODEL", default="deepseek-chat")
 
 
 class DatabaseSettings(CustomBaseSettings):

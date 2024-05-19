@@ -22,12 +22,22 @@ def get_all_logs(logs_dir):
 
     return all_logs
 
-def extract_all_logs_to_plan(all_logs):
-    for log in all_logs:
+def extract_all_logs_to_plan(all_logs, skip_index=0):
+    for i, log in enumerate(all_logs, start=1):
+        if i <= skip_index:
+            continue
+        print(f'开始处理第{i}个日志文件')
         plans = plan_extract_agent(log)
         default_plan_store.add_batch(plans)
+        print(f'第{i}个日志文件处理完成')
 
 if __name__ == '__main__':
-    logs_dir = "result/exp2/logs/react"
+    sample = 30
+    logs_dir = f"result/exp2/logs_sample_{sample}/react"
     all_logs = get_all_logs(logs_dir)
-    extract_all_logs_to_plan(all_logs)
+    # 跳过前面的日志，用于断点续传
+    # 如果前面输出第i个日志文件处理完成，那么skip_index=i
+    skip_index = 0
+    if skip_index > 0:
+        print(f'跳过前{skip_index}个日志文件')
+    extract_all_logs_to_plan(all_logs, skip_index=skip_index)

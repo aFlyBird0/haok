@@ -24,11 +24,6 @@ split = "eval_out_of_distribution"
 env = getattr(alfworld.agents.environment, config["env"]["type"])(config, train_eval=split)
 env = env.init_env(batch_size=1)
 
-# folder = './data/prompts/'
-# prompt_file = 'alfworld_3prompts.json'
-# with open(folder + prompt_file, 'r') as f:
-#     d = json.load(f)
-
 d = haok.exp2.prompts.alfworld.d
 
 def chat(prompt, model=get_settings().llm.default_model, stop=None):
@@ -50,7 +45,8 @@ def process_ob(ob):
 
 import sys
 
-log_dir = "result/exp2/logs"
+sample = 30 # 任务数量
+log_dir = f"result/exp2/logs_sample_{sample}"
 # 先跑 agent_type 等于 react 的，然后跑 extract_all_logs_to_plan.py，最后再跑 react_with_hoak
 # agent_type = "react"
 agent_type = "react_with_haok"
@@ -70,10 +66,15 @@ def alfworld_run(prompt, task_id, task_name, task_type, to_print=True, ob=''):
         sys.stdout.flush()
     for i in range(1, 31):
         action = chat(init_prompt + prompt, stop=['\n']).strip()
+        # 去掉没用的前缀，deepseek 的输出有时候会有
+        action = str.lstrip(action, '>').strip()
         observation, reward, done, info = env.step([action])
         observation, reward, done = process_ob(observation[0]), info['won'][0], done[0]
         # admissible_commands = info['admissible_commands'][0]
         if action.startswith('think:'):
+            observation = 'OK.'
+        # 兼容 deepseek 的输出，它的指令遵循不太规整
+        if action.startswith('> think:'):
             observation = 'OK.'
         if to_print:
             act_and_obs = f'Act {i}: {action}\nObs {i}: {observation}'
@@ -103,7 +104,7 @@ rs = [0] * 6    #结果，一共6个任务
 success_info = []
 llm_call_cnts = []
 
-res_file = f'result/exp2/res/{agent_type}.jsonl'
+res_file = f'result/exp2/res_sample_{sample}/{agent_type}.jsonl'
 
 
 def write_res_file(task_id, task_type, task_name, success: bool, llm_call_cnts: int):
@@ -152,7 +153,7 @@ def extract_task_from_ob(s):
 
 
 # for _ in range(134):
-for _ in range(60):
+for _ in range(sample):
     # 跳过已经存在的行数
     if exisit_res_lines > 0:
         exisit_res_lines -= 1

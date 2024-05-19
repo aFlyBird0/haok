@@ -17,6 +17,7 @@ class OpenAIConfig:
         return ChatOpenAI(
         model_name="glm-4",
         openai_api_base="https://open.bigmodel.cn/api/paas/v4",
+        # 论文临时用的key
         openai_api_key="eyJhbGciOiJIUzI1NiIsInNpZ25fdHlwZSI6IlNJR04iLCJ0eXAiOiJKV1QifQ.eyJhcGlfa2V5IjoiNjI5NzcxMjc5MzA3NTU4YzVlODI3MTdmYmUzMWIyZGMiLCJleHAiOjE3MTY3OTk4Nzk3ODYsInRpbWVzdGFtcCI6MTcwOTAyMzg3OTc4Nn0.83ZPAoa_ZC7dvvs7J7p_dtHP9eXc3sea8e2OOtszjWw",
         streaming=False,
     )
@@ -55,9 +56,18 @@ class OpenAIConfig:
         )
 
     @staticmethod
+    def deep_seek_chat(temperature=0.0):
+        return ChatOpenAI(
+            model_name="deepseek-chat",
+            openai_api_key="sk-a0cb33389f42442a917c0dd978d962b2",   # 论文临时用的key
+            openai_api_base="https://api.deepseek.com/v1",
+            temperature=temperature)
+
+    @staticmethod
     def defaultLLM():
         # return OpenAIConfig.chatglm4()
-        return OpenAIConfig.openai()
+        # return OpenAIConfig.openai()
+        return OpenAIConfig.deep_seek_chat()
 
     @staticmethod
     def llm_with_params(model: str=default_model, temperature: float=0.0):

@@ -1,0 +1,5 @@
+{"task_id": 0, "task_type": "cool", "task_name": "pick_cool_then_place_in_recep-Tomato-None-Microwave-10/trial_T20190909_102644_926781", "success": true, "llm_call_cnts": 14}
+{"task_id": 1, "task_type": "clean", "task_name": "pick_clean_then_place_in_recep-Spatula-None-Drawer-10/trial_T20190907_080730_211959", "success": true, "llm_call_cnts": 14}
+{"task_id": 2, "task_type": "clean", "task_name": "pick_clean_then_place_in_recep-Plate-None-CounterTop-10/trial_T20190908_213420_728917", "success": true, "llm_call_cnts": 11}
+{"task_id": 3, "task_type": "put", "task_name": "pick_and_place_simple-Watch-None-Safe-219/trial_T20190907_074556_124850", "success": true, "llm_call_cnts": 10}
+{"task_id": 4, "task_type": "clean", "task_name": "pick_clean_then_place_in_recep-Cloth-None-Cabinet-424/trial_T20190908_022436_073995", "success": true, "llm_call_cnts": 17}

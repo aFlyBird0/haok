@@ -1,0 +1,37 @@
+You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.
+Your task is to: clean some cloth and put it in cabinet.
+Act 1: think: To solve the task, I need to find and take a cloth, then clean it with sinkbasin, then put it in cabinet.
+Obs 1: OK.
+Act 2: think: First I need to find a cloth. A cloth is more likely to appear in cabinets (1-4), countertop (1), sinkbasin (1-2), garbagecan (1), handtowelholder (1-2), towelholder (1). I can check one by one, starting with cabinet 1.
+Obs 2: OK.
+Act 3: go to cabinet 1
+Obs 3: The cabinet 1 is closed.
+Act 4: open cabinet 1
+Obs 4: You open the cabinet 1. The cabinet 1 is open. In it, you see a toiletpaper 1.
+Act 5: go to cabinet 2
+Obs 5: The cabinet 2 is closed.
+Act 6: open cabinet 2
+Obs 6: You open the cabinet 2. The cabinet 2 is open. In it, you see a cloth 1.
+Act 7: think: Now I find a cloth (1). Next, I need to take it.
+Obs 7: OK.
+Act 8: take cloth 1 from cabinet 2
+Obs 8: You pick up the cloth 1 from the cabinet 2.
+Act 9: think: Now I take a cloth (1). Next, I need to go to sinkbasin (1 or 2) and clean it.
+Obs 9: OK.
+Act 10: go to sinkbasin 1
+Obs 10: On the sinkbasin 1, you see nothing.
+Act 11: go to sinkbasin 2
+Obs 11: On the sinkbasin 2, you see nothing.
+Act 12: think: Since sinkbasin 1 and sinkbasin 2 are empty, I need to use one of them to clean the cloth. I will use sinkbasin 1.
+Obs 12: OK.
+Act 13: go to sinkbasin 1
+Obs 13: On the sinkbasin 1, you see nothing.
+Act 14: clean cloth 1 with sinkbasin 1
+Obs 14: You clean the cloth 1 using the sinkbasin 1.
+Act 15: think: Now I clean a cloth (1). Next, I need to put it in/on cabinet 2.
+Obs 15: OK.
+Act 16: go to cabinet 2
+Obs 16: The cabinet 2 is open. In it, you see nothing.
+Act 17: put cloth 1 in/on cabinet 2
+Obs 17: You put the cloth 1 in/on the cabinet 2.
+Result: Task Success!
